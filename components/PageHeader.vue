@@ -18,6 +18,11 @@
 </template>
 
 <style>
+    header {
+        position: sticky;
+        top: 0;
+    }
+    
     .navigation {
         display: flex;
         justify-content: center;

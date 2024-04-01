@@ -1,13 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(26, 15, 32);
-}
-header{
-    position: -webkit-sticky;    
-    position: sticky;
-    top: 0;
-}
 
 .zodiac {
     display: flex;
@@ -201,35 +191,7 @@ width: 300px;
 text-align: center;
 background-color: rgb(143, 143, 143);     
 }
-.zs p {
-display: flex;
-justify-content: center;
-font-size: xxx-large;  
-font-family: fantasy;
-color: rgb(161, 41, 41);
-padding-right: 30px;
-padding-top: 30px;  
-letter-spacing: 1px;  
-}
-.zs p::selection{
-    color: rgb(143, 143, 143);
-    background: rgb(75, 12, 12);    
-}
-.zs2 p{
-padding: 1px 30px;
-color: rgb(238, 228, 169);
-text-align: justify;
-font-size: larger;
-Line-height: 30px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-letter-spacing: 1px; 
-padding-bottom: 30px;  
-border-bottom: 10px double rgb(212, 198, 119);  
-}
-.zs2::selection{
-    color: rgb(143, 143, 143);
-    background: rgb(75, 12, 12);    
-}
+
 .r {
 display:flex;
 flex-direction: row; 
