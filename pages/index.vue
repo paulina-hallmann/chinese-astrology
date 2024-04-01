@@ -1,9 +1,498 @@
 <template>
     <PageHeader></PageHeader>
+    <main>
+           <div class="zodiac">
+             
+             <p> Chinese astrology
+             </p>
+           </div> 
+           <br> <br> <br>
+           <div class="about">
+            <p>The Chinese zodiac system
+            </p>
+            </div>
+            <div class="more">
+              <img src="https://i.pinimg.com/564x/1d/3d/dd/1d3ddda2c8cfab628935b348061919e4.jpg" title="author">
+              <p> Chinese astrology, deeply rooted in ancient philosophy and culture, offers a fascinating lens through which to understand the dynamics of life. Unlike Western astrology, which is predominantly based on the position of celestial bodies at the time of birth, Chinese astrology is centered around the lunar calendar and the twelve animals of the Chinese zodiac.
+At the heart of Chinese astrology is the belief that each person's destiny and character are influenced by the animal sign under which they were born. These twelve animals—rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog, and pig—rotate in a cycle, with each year corresponding to a particular animal. Individuals born under a specific animal sign are said to possess certain traits and characteristics associated with that animal.  Furthermore, the interactions between different animal signs can be analyzed to predict compatibility in relationships and partnerships. Throughout history, Chinese astrology has remained deeply ingrained in Chinese culture, influencing everything from daily life decisions to governmental policies. Its enduring popularity speaks to its enduring relevance and the belief in its power to provide insights into the mysteries of fate and destiny. Whether embraced as a guiding philosophy or simply enjoyed as a cultural tradition, Chinese astrology continues to captivate and intrigue people around the world. 
+              </p>
+            </div>
+                <div class="with-table">
+                <div class="with-table_3 flex-1">
+                <div class="table2">   
+                <p id="special-Some">
+                    Did you know?
+                </p>
+                </div>
+                <div class="table2"> 
+                <p>
+                    Dì Zhī (地支), or Earthly Branches, were the original terms used for the years. These branches are also assigned to the hours of the day, based on solar time. The animals were later added as mnemonics and categorized as either yīn (阴) or yáng (阳).
+                    Ten Celestial Stems (天干 / tiān gān) pair with the Earthly Branches for a 60 year calendrical cycle. Then add in an element. These cycle through, but each zodiac also has a fixed element. This fixed element is what determines which sign you’re compatible with.   
+                </p>  
+                </div> 
+                <div class="table2">
+                <p id="special2-Some">    
+                Twelve Earthly Branches:   
+                </p>
+                </div>
+                <div class="table2">
+                <p>
+                zi (子), chǒu (丑), yín (寅), mǎo (卯), chén (辰), sì (巳), wǔ (午), wèi (未), shēn (申), yǒu (酉), xū (戌), hài (亥).   
+                </p>
+                </div>
+                <div class="table2">
+                <p id="special2-Some">
+                Ten Celestial Stems:  
+                </p>
+                </div>
+                <div class="table2">
+                <p> 
+                jiǎ (甲), yǐ (乙), bǐng (丙), ding (丁), wù (戊), jǐ (己), gēng (庚), xīn (辛), rén (壬), guǐ (癸).   
+                </p>
+                </div>
+                <div class="table2">
+                <p id="special2-Some">
+                Five elements:  
+                </p>
+                </div>
+                <div class="table2">
+                <p id="special3-Some"> 
+                water (水 / shuǐ), wood (木 / mù), fire (火 / huǒ), earth (土 / tǔ), metal (金 / jīn).    
+                </p>
+                </div>
+                </div>
+                <div class="table2 flex-1">
+                <table>
+                    <tr>
+                      <th>Year</th>
+                      <th>Celestial stem</th>
+                      <th>Earthly branch</th>
+                      <th>Zodiac</th>
+                      <th>Element</th>
+                      <th>Yin/Yang</th>
+                    </tr>
+                    <tr>
+                      <td>2000</td>
+                      <td>gēng</td>
+                      <td>chén</td>
+                      <td>Dragon</td>
+                      <td>Metal</td>
+                      <td>Yang</td>
+                    </tr>
+                    <tr>
+                      <td>2001</td>
+                      <td>xīn</td>
+                      <td>sì</td>
+                      <td>Snake</td>
+                      <td>Metal</td>
+                      <td>Yin</td>
+                    </tr>
+                    <tr>
+                      <td>2002</td>
+                      <td>rén</td>
+                      <td>wǔ</td>
+                      <td>Horse</td>
+                      <td>Water</td>
+                      <td>Yang</td>
+                    </tr>
+                    <tr>
+                        <td>2003</td>
+                        <td>guǐ</td>
+                        <td>wèi</td>
+                        <td>Goat</td>
+                        <td>Water</td>
+                        <td>Yin</td>
+                      </tr>
+                      <tr>
+                        <td>2004</td>
+                        <td>jiǎ</td>
+                        <td>shēn</td>
+                        <td>Monkey</td>
+                        <td>Wood</td>
+                        <td>Yang</td>
+                      </tr>  
+                      <tr>
+                        <td>2005</td>
+                        <td>yǐ</td>
+                        <td>yǒu</td>
+                        <td>Rooster</td>
+                        <td>Wood</td>
+                        <td>Yin</td>
+                      </tr>   
+                      <tr>
+                        <td>2006</td>
+                        <td>bǐng</td>
+                        <td>xū</td>
+                        <td>Dog</td>
+                        <td>Fire</td>
+                        <td>Yang</td>
+                      </tr> 
+                      <tr>
+                        <td>2007</td>
+                        <td>ding</td>
+                        <td>hài</td>
+                        <td>Pig</td>
+                        <td>Fire</td>
+                        <td>Yin</td>
+                      </tr>
+                      <tr>
+                        <td>2008</td>
+                        <td>wù</td>
+                        <td>zi</td>
+                        <td>Rat</td>
+                        <td>Earth</td>
+                        <td>Yang</td>
+                      </tr> 
+                      <tr>
+                        <td>2009</td>
+                        <td>jǐ</td>
+                        <td>chǒu</td>
+                        <td>Ox</td>
+                        <td>Earth</td>
+                        <td>Yin</td>
+                      </tr>
+                      <tr>
+                        <td>2010</td>
+                        <td>gēng</td>
+                        <td>yín</td>
+                        <td>Tiger</td>
+                        <td>Metal</td>
+                        <td>Yang</td>
+                      </tr> 
+                      <tr>
+                        <td>2011</td>
+                        <td>xīn</td>
+                        <td>mǎo</td>
+                        <td>Rabbit</td>
+                        <td>Metal</td>
+                        <td>Yin</td>
+                      </tr>
+                      <tr>
+                        <td>2012</td>
+                        <td>rén</td>
+                        <td>chén</td>
+                        <td>Dragon</td>
+                        <td>Water</td>
+                        <td>Yang</td>
+                      </tr>
+                      <tr>
+                        <td>2013</td>
+                        <td>guǐ</td>
+                        <td>sì</td>
+                        <td>Snake</td>
+                        <td>Water</td>
+                        <td>Yin</td>
+                      </tr>
+                      <tr>
+                        <td>2014</td>
+                        <td>jiǎ</td>
+                        <td>wǔ</td>
+                        <td>Horse</td>
+                        <td>Wood</td>
+                        <td>Yang</td>
+                      </tr>  
+                      <tr>
+                        <td>2015</td>
+                        <td>yǐ</td>
+                        <td>wèi</td>
+                        <td>Goat</td>
+                        <td>Wood</td>
+                        <td>Yin</td>
+                      </tr>   
+                      <tr>
+                        <td>2016</td>
+                        <td>bǐng</td>
+                        <td>shēn</td>
+                        <td>Monkey</td>
+                        <td>Fire</td>
+                        <td>Yang</td>
+                      </tr> 
+                      <tr>
+                        <td>2017</td>
+                        <td>ding</td>
+                        <td>yǒu</td>
+                        <td>Rooster</td>
+                        <td>Fire</td>
+                        <td>Yin</td>
+                      </tr>
+                      <tr>
+                        <td>2018</td>
+                        <td>wù</td>
+                        <td>xū</td>
+                        <td>Dog</td>
+                        <td>Earth</td>
+                        <td>Yang</td>
+                      </tr> 
+                      <tr>
+                        <td>2019</td>
+                        <td>jǐ</td>
+                        <td>hài</td>
+                        <td>Pig</td>
+                        <td>Earth</td>
+                        <td>Yin</td>
+                      </tr>
+                      <tr>
+                        <td>2020</td>
+                        <td>gēng</td>
+                        <td>zi</td>
+                        <td>Rat</td>
+                        <td>Metal</td>
+                        <td>Yang</td>
+                      </tr> 
+                      <tr>
+                        <td>2021</td>
+                        <td>xīn</td>
+                        <td>chǒu</td>
+                        <td>Ox</td>
+                        <td>Metal</td>
+                        <td>Yin</td>
+                      </tr>
+                      <tr>
+                        <td>2022</td>
+                        <td>rén</td>
+                        <td>yín</td>
+                        <td>Tiger</td>
+                        <td>Water</td>
+                        <td>Yang</td>
+                      </tr>
+                      <tr>
+                        <td>2023</td>
+                        <td>guǐ</td>
+                        <td>mǎo</td>
+                        <td>Rabbit</td>
+                        <td>Water</td>
+                        <td>Yin</td>
+                      </tr>
+                      <tr>
+                        <td>2024</td>
+                        <td>jiǎ</td>
+                        <td>chén</td>
+                        <td>Dragon</td>
+                        <td>Wood</td>
+                        <td>Yang</td>
+                      </tr>  
+                      <tr>
+                        <td>2025</td>
+                        <td>yǐ</td>
+                        <td>sì</td>
+                        <td>Snake</td>
+                        <td>Wood</td>
+                        <td>Yin</td>
+                      </tr>                                                     
+                  </table>
+                  </div>
+                 </div>
+                
+             <div class="legends">
+               <p>
+                Legends
+               </p>
+            </div>
+            <div class="history">
+            <div class="background"><h1>The Great Race</h1><p> Perhaps the most famous legend surrounding the Chinese zodiac is the story of the Great Race. According to this myth, the Jade Emperor, ruler of heaven, organized a race among animals to determine their order in the zodiac. The rat, cunning and clever, hitched a ride on the back of the ox and crossed the river to finish first, followed by the ox, tiger, rabbit, and so on. Each animal represents a year in the twelve-year cycle.</p></div>
+            <div class="background"><h1>The Friendship of the Rat and the Cat</h1> <p>In some versions of the Great Race legend, the cat was supposed to be included among the zodiac animals. However, the rat, fearful of competition, deceived the cat into missing the race. As a result, the cat was left out of the zodiac, which is why cats are not part of the Chinese zodiac and why rats and cats are said to be enemies to this day.</p></div>
+            <div class="background"><h1>The Jade Emperor's Banquet</h1><p> Another legend tells of a grand banquet held by the Jade Emperor to celebrate the completion of the zodiac. The rat, eager to attend, persuaded the ox to carry him across a river. However, upon reaching the other side, the rat leaped off the ox's back and finished first, securing the first position in the zodiac. This legend explains why the rat is the first animal in the Chinese zodiac cycle.</p></div>
+            <div class="background"><h1>The Battle for Zodiac Supremacy</h1><p> In a lesser-known legend, the zodiac animals engaged in a fierce battle to determine their order in the zodiac cycle. The rat, utilizing its intelligence and resourcefulness, outmaneuvered the other animals and emerged victorious. This legend emphasizes the importance of wit and strategy in the rat's triumph.</p> </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+        </footer>
 </template>
 
 <style>
-    
+.zodiac {
+    display: flex;
+    justify-content: center;
+    background-image: url(https://i.pinimg.com/564x/29/cc/06/29cc0670039ecfcf49a96ed26e800dde.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 10px double rgb(212, 198, 119);
+}
+  
+.zodiac p {
+    display: flex;
+    color: rgb(26, 15, 32);
+    padding: 5px 5px;
+    font-size: 150px;
+    font-family: Copperplate, Papyrus, fantasy;
+    letter-spacing: 2px; 
+    opacity: 0.99;
+    font-variant: small-caps;
+}
+.zodiac p::selection{
+    color: rgb(143, 143, 143);
+    background: rgb(75, 12, 12);    
+}
+
+.about p {
+display: flex;
+font-size: xxx-large;
+justify-content: center;
+font-family: fantasy;
+color: rgb(143, 143, 143);
+padding-right: 30px;
+letter-spacing: 1px; 
+}
+.about p::selection{
+    color: rgb(143, 143, 143);
+    background: rgb(75, 12, 12);    
+}
+  
+.more{
+display: flex;
+align-items: center;
+padding-bottom: 20px;
+}
+
+.more p {
+ padding: 30px;
+ justify-content: start;
+ color: rgb(238, 228, 169);
+ text-align: justify;
+ font-size: larger;
+ line-height: 30px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ letter-spacing: 1px;
+}
+.more p::selection{
+    color: rgb(143, 143, 143);
+    background: rgb(75, 12, 12);    
+}
+.more img::selection{
+    color: rgb(143, 143, 143);
+    background: rgb(75, 12, 12);    
+}
+#special-Some{
+font-size: xxx-large;  
+font-family: fantasy;
+color: rgb(238, 228, 169);
+padding-right: 30px;
+padding-top: 30px;
+border-top: 10px double rgb(238, 228, 169);
+letter-spacing: 1px; 
+}
+.with-table {
+display: flex;
+align-items: center;
+background-color: rgb(161, 41, 41);
+}
+.with-table p{
+padding: 1px 30px;
+color: rgb(26, 15, 32);
+text-align: justify;
+font-size: larger;
+line-height: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+letter-spacing: 1px; 
+padding-bottom: 10px;
+}
+.with-table p::selection{
+    color: rgb(143, 143, 143);
+    background: rgb(75, 12, 12);    
+}
+#special2-Some {
+color: rgb(238, 228, 169);
+text-align: justify;
+font-size: larger;
+line-height: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+letter-spacing: 1px;
+font-weight: bolder;
+}
+#special3-Some {
+padding: 1px 30px;
+color: rgb(26, 15, 32);
+text-align: justify;
+font-size: larger;
+line-height: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+letter-spacing: 1px; 
+padding-bottom: 30px;    
+border-bottom: 10px double rgb(238, 228, 169);    
+}
+.with-table table {
+font-size: larger;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+border: 2px solid rgb(238, 228, 169);  
+width: 800px;
+height: 100px;
+border-collapse: collapse;
+ }
+
+.with-table th, td {
+border: 1px solid rgb(238, 228, 169);
+text-align: left;
+padding: 8px;   
+color: rgb(26, 15, 32); 
+}
+.with-table tr:hover{
+background-color:rgb(75, 12, 12);    
+}
+.with-table td::selection{
+    color: rgb(143, 143, 143);
+    background: rgb(75, 12, 12);    
+}
+.with-table th::selection{
+    color: rgb(143, 143, 143);
+    background: rgb(75, 12, 12);    
+}
+.legends p {
+display: flex;
+font-size: xxx-large;
+justify-content: center;
+font-family: fantasy;
+color: rgb(143, 143, 143);
+letter-spacing: 1px; 
+    }
+.legends p::selection{
+    color: rgb(143, 143, 143);
+    background: rgb(75, 12, 12);    
+}
+.history {
+display: flex; 
+justify-content: space-evenly;
+gap: 20px; 
+padding: 20px; 
+background-color: rgb(26, 15, 32); 
+}
+.background h1{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+height: 100px;
+color: rgb(26, 15, 32);
+}
+.background h1::selection{
+    color: rgb(143, 143, 143);
+    background: rgb(75, 12, 12);    
+}
+.history p{
+padding: 1px 30px;
+color: rgb(26, 15, 32);
+font-size: larger;
+line-height: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+letter-spacing: 1px;   
+text-align: center;
+flex-direction: row-reverse;
+}
+.history p::selection{
+    color: rgb(143, 143, 143);
+    background: rgb(75, 12, 12);    
+}
+.background p {
+align-items: flex-end;   
+}
+.background p::selection{
+    color: rgb(143, 143, 143);
+    background: rgb(75, 12, 12);    
+}
+.background{
+display: flex;
+flex-direction: column;  
+width: 300px;
+text-align: center;
+background-color: rgb(143, 143, 143);     
+}    
 </style>
 
 <script>
