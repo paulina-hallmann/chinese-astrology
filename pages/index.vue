@@ -282,18 +282,34 @@ At the heart of Chinese astrology is the belief that each person's destiny and c
                   </table>
                   </div>
                  </div>
-                
-             <div class="legends">
-               <p>
+
+            <div class="legends">
+                <p>
                 Legends
-               </p>
-            </div>
-            <div class="history">
-            <div class="background"><h1>The Great Race</h1><p> Perhaps the most famous legend surrounding the Chinese zodiac is the story of the Great Race. According to this myth, the Jade Emperor, ruler of heaven, organized a race among animals to determine their order in the zodiac. The rat, cunning and clever, hitched a ride on the back of the ox and crossed the river to finish first, followed by the ox, tiger, rabbit, and so on. Each animal represents a year in the twelve-year cycle.</p></div>
-            <div class="background"><h1>The Friendship of the Rat and the Cat</h1> <p>In some versions of the Great Race legend, the cat was supposed to be included among the zodiac animals. However, the rat, fearful of competition, deceived the cat into missing the race. As a result, the cat was left out of the zodiac, which is why cats are not part of the Chinese zodiac and why rats and cats are said to be enemies to this day.</p></div>
-            <div class="background"><h1>The Jade Emperor's Banquet</h1><p> Another legend tells of a grand banquet held by the Jade Emperor to celebrate the completion of the zodiac. The rat, eager to attend, persuaded the ox to carry him across a river. However, upon reaching the other side, the rat leaped off the ox's back and finished first, securing the first position in the zodiac. This legend explains why the rat is the first animal in the Chinese zodiac cycle.</p></div>
-            <div class="background"><h1>The Battle for Zodiac Supremacy</h1><p> In a lesser-known legend, the zodiac animals engaged in a fierce battle to determine their order in the zodiac cycle. The rat, utilizing its intelligence and resourcefulness, outmaneuvered the other animals and emerged victorious. This legend emphasizes the importance of wit and strategy in the rat's triumph.</p> </div>
-            </div>
+                </p>
+            </div>        
+                  
+        <div class="history">
+            <div class="background">
+            <h1>The Great Race</h1>
+            <p> Perhaps the most famous legend surrounding the Chinese zodiac is the story of the Great Race. According to this myth, the Jade Emperor, ruler of heaven, organized a race among animals to determine their order in the zodiac. The rat, cunning and clever, hitched a ride on the back of the ox and crossed the river to finish first, followed by the ox, tiger, rabbit, and so on. Each animal represents a year in the twelve-year cycle.
+            </p>
+        </div>
+            <div class="background">
+            <h1>The Friendship of the Rat and the Cat</h1> 
+            <p>In some versions of the Great Race legend, the cat was supposed to be included among the zodiac animals. However, the rat, fearful of competition, deceived the cat into missing the race. As a result, the cat was left out of the zodiac, which is why cats are not part of the Chinese zodiac and why rats and cats are said to be enemies to this day.
+            </p>
+        </div>
+            <div class="background">
+            <h1>The Jade Emperor's Banquet</h1>
+            <p> Another legend tells of a grand banquet held by the Jade Emperor to celebrate the completion of the zodiac. The rat, eager to attend, persuaded the ox to carry him across a river. However, upon reaching the other side, the rat leaped off the ox's back and finished first, securing the first position in the zodiac. This legend explains why the rat is the first animal in the Chinese zodiac cycle.
+            </p>
+        </div>
+            <div class="background">
+            <h1>The Battle for Zodiac Supremacy</h1>
+            <p> In a lesser-known legend, the zodiac animals engaged in a fierce battle to determine their order in the zodiac cycle. The rat, utilizing its intelligence and resourcefulness, outmaneuvered the other animals and emerged victorious. This legend emphasizes the importance of wit and strategy in the rat's triumph.
+            </p> 
+        </div>
           </div>
         </main>
         <footer>
