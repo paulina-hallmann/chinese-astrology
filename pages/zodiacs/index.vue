@@ -46,7 +46,7 @@
     border-bottom: 10px double rgb(212, 198, 119);  
 }
 
-.zs2::selection {
+.zs2 p::selection {
     color: rgb(143, 143, 143);
     background: rgb(75, 12, 12);    
 }

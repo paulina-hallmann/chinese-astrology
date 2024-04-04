@@ -12,8 +12,8 @@
             </p>
             </div>
             <div class="more">
-              <img src="https://i.pinimg.com/564x/1d/3d/dd/1d3ddda2c8cfab628935b348061919e4.jpg" title="author">
-              <p> Chinese astrology, deeply rooted in ancient philosophy and culture, offers a fascinating lens through which to understand the dynamics of life. Unlike Western astrology, which is predominantly based on the position of celestial bodies at the time of birth, Chinese astrology is centered around the lunar calendar and the twelve animals of the Chinese zodiac.
+                <img src="https://i.pinimg.com/564x/1d/3d/dd/1d3ddda2c8cfab628935b348061919e4.jpg" title="author">
+                <p> Chinese astrology, deeply rooted in ancient philosophy and culture, offers a fascinating lens through which to understand the dynamics of life. Unlike Western astrology, which is predominantly based on the position of celestial bodies at the time of birth, Chinese astrology is centered around the lunar calendar and the twelve animals of the Chinese zodiac.
 At the heart of Chinese astrology is the belief that each person's destiny and character are influenced by the animal sign under which they were born. These twelve animals—rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog, and pig—rotate in a cycle, with each year corresponding to a particular animal. Individuals born under a specific animal sign are said to possess certain traits and characteristics associated with that animal.  Furthermore, the interactions between different animal signs can be analyzed to predict compatibility in relationships and partnerships. Throughout history, Chinese astrology has remained deeply ingrained in Chinese culture, influencing everything from daily life decisions to governmental policies. Its enduring popularity speaks to its enduring relevance and the belief in its power to provide insights into the mysteries of fate and destiny. Whether embraced as a guiding philosophy or simply enjoyed as a cultural tradition, Chinese astrology continues to captivate and intrigue people around the world. 
               </p>
             </div>
@@ -354,7 +354,6 @@ letter-spacing: 1px;
     color: rgb(143, 143, 143);
     background: rgb(75, 12, 12);    
 }
-  
 .more{
 display: flex;
 align-items: center;
@@ -374,6 +373,9 @@ padding-bottom: 20px;
 .more p::selection{
     color: rgb(143, 143, 143);
     background: rgb(75, 12, 12);    
+}
+.more img{
+    border-radius: 25%;
 }
 .more img::selection{
     color: rgb(143, 143, 143);
