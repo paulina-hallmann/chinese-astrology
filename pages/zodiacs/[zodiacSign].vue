@@ -114,7 +114,7 @@
                 <h2>Metal</h2> 
                 <h4>{{ data[zodiacSign]?.metal_years}}</h4> 
             <div class="dropdown">
-            <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(238, 228, 169);"> 
+            <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(26, 15, 32);"> 
               expand_circle_down
             </span>
             <div class="dropdown-content">
@@ -128,7 +128,7 @@
                 <h2>Water</h2>  
                 <h4>{{ data[zodiacSign]?.water_years}}</h4>  
               <div class="dropdown">
-                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(238, 228, 169);">
+                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(26, 15, 32);">
                   expand_circle_down
                   </span>
                 <div class="dropdown-content">
@@ -142,7 +142,7 @@
                   <h2>Wood</h2>   
                   <h4>{{ data[zodiacSign]?.wood_years}}</h4>
               <div class="dropdown">
-                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(238, 228, 169);">
+                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(26, 15, 32);">
                   expand_circle_down
                   </span>
                 <div class="dropdown-content">
@@ -156,7 +156,7 @@
                   <h2>Fire</h2>
                   <h4>{{ data[zodiacSign]?.fire_years}}</h4>
               <div class="dropdown">
-                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(238, 228, 169);">
+                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(26, 15, 32);">
                   expand_circle_down
                   </span>
                   <div class="dropdown-content">
@@ -170,7 +170,7 @@
               <h2>Earth</h2>
               <h4>{{ data[zodiacSign]?.earth_years}}</h4>
               <div class="dropdown">
-                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(238, 228, 169);">
+                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(26, 15, 32);">
                   expand_circle_down
                   </span>
                 <div class="dropdown-content">
@@ -1084,11 +1084,11 @@ align-items: center;
 .r p{
 padding-left: 30px;
 padding-right: 10px;
-color: rgb(238, 228, 169);
+color: rgb(26, 15, 32);
 }
 .rs p{
     padding: 1px 30px;
-    color: rgb(238, 228, 169);
+    color: rgb(26, 15, 32);
     text-align: justify;
     font-size: larger;
     Line-height: 30px;
@@ -1101,7 +1101,7 @@ color: rgb(238, 228, 169);
 }
 .rs {
 background-color: rgb(161, 41, 41);
-outline: 10px double rgb(238, 228, 169);
+outline: 10px double rgb(26, 15, 32);
 width: 80%;
 }
 .rp{
@@ -1135,7 +1135,7 @@ border-right: 10px double rgb(161, 41, 41);
 }
 .pers p {
     padding: 1px 30px;
-    color: rgb(238, 228, 169);
+    color: rgb(26, 15, 32);
     text-align: justify;
     font-size: larger;
     Line-height: 30px;
@@ -1173,20 +1173,20 @@ padding-left: 30px;
 .perr table {
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
-    border: 2px solid rgb(238, 228, 169);
+    border: 2px solid rgb(26, 15, 32);
     border-collapse: collapse;
 }
 .perr th {
-    border: 1px solid rgb(238, 228, 169);
+    border: 1px solid rgb(26, 15, 32);
     text-align: left;
     padding: 8px;    
-    color: rgb(238, 228, 169);
+    color: rgb(26, 15, 32);
     }
 .perr td {
-    border: 1px solid rgb(238, 228, 169);
+    border: 1px solid rgb(26, 15, 32);
     text-align: left;
     padding: 8px;    
-    color: rgb(238, 228, 169);
+    color: rgb(26, 15, 32);
 }
 .perr tr:hover{
         background-color:rgb(75, 12, 12);    
@@ -1205,12 +1205,12 @@ padding-left: 30px;
     justify-content: space-between;
     gap: 20px; 
     padding: 20px; 
-    background-color: rgb(26, 15, 32); 
+    background-color: rgb(238, 228, 169); 
     }
 .perso h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 50px;
-    color: rgb(26, 15, 32);
+    color: rgb(238, 228, 169);
     }
 .perso h2::selection{
         color: rgb(143, 143, 143);
@@ -1218,7 +1218,7 @@ padding-left: 30px;
     }    
 .person p{
     padding: 1px 30px;
-    color: rgb(238, 228, 169);
+    color: rgb(26, 15, 32);
     font-size: larger;
     line-height: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1232,7 +1232,7 @@ padding-left: 30px;
     }    
 .perso li {
     padding: 1px 30px;
-    color: rgb(26, 15, 32);
+    color: rgb(238, 228, 169);
     font-size: larger;
     line-height: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1263,7 +1263,7 @@ padding-left: 30px;
     }
 .persona p{
     padding: 1px 30px;
-    color: rgb(238, 228, 169);
+    color: rgb(26, 15, 32);
     font-size: larger;
     line-height: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1283,7 +1283,7 @@ padding-top: 80px;
 padding-bottom: 80px;
 font-weight: bolder;
 font-variant: small-caps;
-color: rgb(26, 15, 32);
+color: rgb(238, 228, 169);
 }
 .sum {
 background-image: url(https://i.pinimg.com/564x/29/cc/06/29cc0670039ecfcf49a96ed26e800dde.jpg);    
@@ -1296,7 +1296,7 @@ background-image: url(https://i.pinimg.com/564x/29/cc/06/29cc0670039ecfcf49a96ed
     display: flex;
     font-size: xxx-large;  
     font-family: fantasy;
-    color: rgb(238, 228, 169); 
+    color: rgb(26, 15, 32); 
     letter-spacing: 1px;
     justify-content: center;   
 }
@@ -1330,7 +1330,7 @@ padding-right: 80px;
     z-index: 1;
   }
 .dropdown-content p{ 
-    color: rgb(26, 15, 32);
+    color: rgb(238, 228, 169);
     font-size: larger;
     line-height: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1370,7 +1370,7 @@ text-align: center;
 }
 .earth h2{
 letter-spacing: 1px;
-color: rgb(238, 228, 169);
+color: rgb(26, 15, 32);
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 text-align: center;
 }
@@ -1399,7 +1399,7 @@ padding: 30px;
     background: rgb(75, 12, 12);    
 }
 .comp p{
-    color: rgb(238, 228, 169);
+    color: rgb(26, 15, 32);
     font-size: larger;
     line-height: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1433,7 +1433,7 @@ border-left: 10px double rgb(75, 12, 12);
 .compa p{
 display: flex;
 flex-wrap: wrap;
-color: rgb(238, 228, 169);
+color: rgb(26, 15, 32);
 font-size: larger;
 line-height: 30px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1477,9 +1477,9 @@ text-align: center;
     gap: 20px; 
     padding: 20px; 
     padding-top: 0px;
-    background-color: rgb(26, 15, 32);
+    background-color: rgb(238, 228, 169);
     border-radius: 10px;
-    border: 3px solid rgb(238, 228, 169); 
+    border: 3px solid rgb(26, 15, 32); 
 }
 .gender h2::selection{
     color: rgb(143, 143, 143);
@@ -1514,7 +1514,7 @@ text-align: center;
     background: rgb(75, 12, 12);    
 }
 .g-content p{ 
-        color: rgb(238, 228, 169);
+        color: rgb(26, 15, 32);
         font-size: larger;
         line-height: 30px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1573,7 +1573,7 @@ justify-content: space-evenly;
     border-radius: 20px;
     padding: 20px;
     width: 40%;
-    color:rgb(26, 15, 32);
+    color:rgb(238, 228, 169);
     font-size: larger;
     line-height: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1599,7 +1599,7 @@ justify-content: space-evenly;
     display: flex;
     font-size: xxx-large;  
     font-family: fantasy;
-    color: rgb(238, 228, 169); 
+    color: rgb(26, 15, 32); 
     letter-spacing: 1px;
     justify-content: center;
 }
@@ -1611,7 +1611,7 @@ justify-content: space-evenly;
 .fa{
     display: grid;
     grid-gap: 20px;
-    background-color: rgb(26, 15, 32);
+    background-color: rgb(238, 228, 169);
 }
 .f {
     background: rgb(161, 41, 41);
@@ -1627,13 +1627,13 @@ justify-content: space-evenly;
     white-space: nowrap;
 }
 .f p {
-    color:rgb(26, 15, 32);
+    color:rgb(238, 228, 169);
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px; 
 }
 .f h3 {
-    color:rgb(238, 228, 169);
+    color:rgb(26, 15, 32);
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
@@ -1648,7 +1648,7 @@ justify-content: space-evenly;
     background: rgb(75, 12, 12);    
 }
 .out p{
-    color: rgb(238, 228, 169);
+    color: rgb(26, 15, 32);
     font-size: x-large;
     line-height: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
