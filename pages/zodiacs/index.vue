@@ -36,14 +36,14 @@
 
 .zs2 p {
     padding: 1px 30px;
-    color: rgb(238, 228, 169);
+    color: rgb(26, 15, 33);
     text-align: justify;
     font-size: larger;
     Line-height: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px; 
     padding-bottom: 30px;  
-    border-bottom: 10px double rgb(212, 198, 119);  
+    border-bottom: 10px double rgb(75, 12, 12);  
 }
 
 .zs2 p::selection {

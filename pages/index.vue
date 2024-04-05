@@ -6,17 +6,17 @@
              <p> Chinese astrology
              </p>
            </div> 
-           <br> <br> <br>
            <div class="about">
-            <p>The Chinese zodiac system
-            </p>
-            </div>
+            <h2>The Chinese zodiac system
+            </h2>
             <div class="more">
                 <img src="https://i.pinimg.com/564x/1d/3d/dd/1d3ddda2c8cfab628935b348061919e4.jpg" title="author">
                 <p> Chinese astrology, deeply rooted in ancient philosophy and culture, offers a fascinating lens through which to understand the dynamics of life. Unlike Western astrology, which is predominantly based on the position of celestial bodies at the time of birth, Chinese astrology is centered around the lunar calendar and the twelve animals of the Chinese zodiac.
 At the heart of Chinese astrology is the belief that each person's destiny and character are influenced by the animal sign under which they were born. These twelve animals—rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog, and pig—rotate in a cycle, with each year corresponding to a particular animal. Individuals born under a specific animal sign are said to possess certain traits and characteristics associated with that animal.  Furthermore, the interactions between different animal signs can be analyzed to predict compatibility in relationships and partnerships. Throughout history, Chinese astrology has remained deeply ingrained in Chinese culture, influencing everything from daily life decisions to governmental policies. Its enduring popularity speaks to its enduring relevance and the belief in its power to provide insights into the mysteries of fate and destiny. Whether embraced as a guiding philosophy or simply enjoyed as a cultural tradition, Chinese astrology continues to captivate and intrigue people around the world. 
               </p>
+              <img src="https://i.pinimg.com/564x/1d/3d/dd/1d3ddda2c8cfab628935b348061919e4.jpg" title="author">
             </div>
+          </div>
                 <div class="with-table">
                 <div class="with-table_3 flex-1">
                 <div class="table2">   
@@ -284,12 +284,10 @@ At the heart of Chinese astrology is the belief that each person's destiny and c
                  </div>
 
             <div class="legends">
-                <p>
+                <h2>
                 Legends
-                </p>
-            </div>        
-                  
-        <div class="history">
+                </h2>   
+            <div class="history">
             <div class="background">
             <h1>The Great Race</h1>
             <p> Perhaps the most famous legend surrounding the Chinese zodiac is the story of the Great Race. According to this myth, the Jade Emperor, ruler of heaven, organized a race among animals to determine their order in the zodiac. The rat, cunning and clever, hitched a ride on the back of the ox and crossed the river to finish first, followed by the ox, tiger, rabbit, and so on. Each animal represents a year in the twelve-year cycle.
@@ -311,6 +309,7 @@ At the heart of Chinese astrology is the belief that each person's destiny and c
             </p> 
         </div>
           </div>
+        </div>
         </main>
         <footer>
         </footer>
@@ -341,16 +340,17 @@ At the heart of Chinese astrology is the belief that each person's destiny and c
     background: rgb(75, 12, 12);    
 }
 
-.about p {
+.about h2 {
 display: flex;
 font-size: xxx-large;
 justify-content: center;
 font-family: fantasy;
-color: rgb(143, 143, 143);
+color: rgb(26, 15, 32);
 padding-right: 30px;
 letter-spacing: 1px; 
+padding-top: 30px;
 }
-.about p::selection{
+.about h2::selection{
     color: rgb(143, 143, 143);
     background: rgb(75, 12, 12);    
 }
@@ -363,8 +363,8 @@ padding-bottom: 20px;
 .more p {
  padding: 30px;
  justify-content: start;
- color: rgb(238, 228, 169);
- text-align: justify;
+ color: rgb(26, 15, 32);
+ text-align: center;
  font-size: larger;
  line-height: 30px;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -375,7 +375,12 @@ padding-bottom: 20px;
     background: rgb(75, 12, 12);    
 }
 .more img{
-    border-radius: 25%;
+    border-radius: 0%;
+    width: 10%;
+    height: 450px;
+    object-fit: cover;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .more img::selection{
     color: rgb(143, 143, 143);
@@ -394,6 +399,10 @@ letter-spacing: 1px;
 display: flex;
 align-items: center;
 background-color: rgb(161, 41, 41);
+padding-top: 20px;
+padding-bottom: 20px;
+border-top: 30px double rgb(238, 228, 169);
+border-bottom: 30px double rgb(238, 228, 169);
 }
 .with-table p{
 padding: 1px 30px;
@@ -455,15 +464,21 @@ background-color:rgb(75, 12, 12);
     color: rgb(143, 143, 143);
     background: rgb(75, 12, 12);    
 }
-.legends p {
+.legends {
+  background-color: rgb(26, 15, 32); 
+  border-top: 30px double rgb(238, 228, 169);
+  border-bottom: 30px double rgb(238, 228, 169); 
+}
+.legends h2 {
 display: flex;
 font-size: xxx-large;
 justify-content: center;
 font-family: fantasy;
 color: rgb(143, 143, 143);
 letter-spacing: 1px; 
+padding-top: 15px;
     }
-.legends p::selection{
+.legends h2::selection{
     color: rgb(143, 143, 143);
     background: rgb(75, 12, 12);    
 }
@@ -471,8 +486,7 @@ letter-spacing: 1px;
 display: flex; 
 justify-content: space-evenly;
 gap: 20px; 
-padding: 20px; 
-background-color: rgb(26, 15, 32); 
+padding: 20px;
 }
 .background h1{
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

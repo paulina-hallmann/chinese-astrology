@@ -3,10 +3,7 @@
         <div class="navigation">
             <NuxtLink to="/">
                 Home
-            </NuxtLink>
-            <NuxtLink to="/chinese_new_year">
-                Chinese New Year
-            </NuxtLink>   
+            </NuxtLink>  
             <NuxtLink to="/zodiacs">
                 Zodiac signs
             </NuxtLink>
@@ -26,7 +23,7 @@
     .navigation {
         display: flex;
         justify-content: center;
-        border-bottom: 10px double rgb(212, 198, 119);
+        border-bottom: 10px double rgb(75, 12, 12);
     }
 
     .navigation a {
