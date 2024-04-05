@@ -174,15 +174,6 @@
     </main>
 </template>
 
-<script setup lang="ts">
-
-const { params } = useRoute();
-const horoscope: string = params.horoscope as string;
-
-const data: Record<string, Record<string, string>> = {
-}
-</script>
-
 <style>
 .Check P {
     display: flex;
