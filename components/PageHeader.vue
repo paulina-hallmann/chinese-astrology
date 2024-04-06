@@ -23,7 +23,6 @@
     .navigation {
         display: flex;
         justify-content: center;
-        border-bottom: 10px double rgb(75, 12, 12);
     }
 
     .navigation a {

@@ -2,11 +2,10 @@
     <PageHeader></PageHeader>
     <ZodiacHeader></ZodiacHeader>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    
 
     <main>    
         <div class="r">
-            <svg width="100" height="100" viewBox="0 0 87.3 92.607" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(26, 15, 33)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(26, 15, 33);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d={{ data[zodiacSign]?.letter }} vector-effect="non-scaling-stroke"/></g></svg>
+            <div v-html="data[zodiacSign]?.letter"></div>
         <div class="rs">     
         <p> {{ data[zodiacSign]?.summary }} </p>  
         </div>
@@ -202,9 +201,12 @@
                 <div class="kw">
                 <h2>{{ data[zodiacSign]?.gender }}</h2>
                 <div class="g">
-                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(194, 181, 178);">
+                <input type="checkbox" id="toggle">
+                <label for="toggle">
+                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(75, 12, 12);">
                     expand_circle_down
                 </span>
+                </label>
                 <div class="g-content">
                   <p>
                     {{ data[zodiacSign]?.gender_more }}
@@ -215,9 +217,12 @@
                 <div class="kw">
                 <h2>{{ data[zodiacSign]?.gender_reverse }}</h2>
                 <div class="g">
-                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(194, 181, 178);">
+                    <input type="checkbox" id="toggle2">
+                <label for="toggle2">
+                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(75, 12, 12);">
                     expand_circle_down
                 </span>
+                </label>
                 <div class="g-content">
                   <p>
                     {{ data[zodiacSign]?.gender_reverse_more }}
@@ -242,9 +247,12 @@
                 <div class="kw">
                 <h2>{{ data[zodiacSign]?.gender_2 }}</h2>
                 <div class="g">
-                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(194, 181, 178);">
+                <input type="checkbox" id="toggle3">
+                <label for="toggle3">
+                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(75, 12, 12);">
                     expand_circle_down
                 </span>
+                </label>
                 <div class="g-content">
                   <p>
                     {{ data[zodiacSign]?.gender_more_2 }}
@@ -255,9 +263,12 @@
                 <div class="kw">
                 <h2>{{ data[zodiacSign]?.gender_reverse_2 }}</h2>
                 <div class="g">
-                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(194, 181, 178);">
+                    <input type="checkbox" id="toggle4">
+                <label for="toggle4">
+                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(75, 12, 12);">
                     expand_circle_down
                 </span>
+                </label>
                 <div class="g-content">
                   <p>
                     {{ data[zodiacSign]?.gender_reverse_more_2 }}
@@ -282,9 +293,12 @@
                 <div class="kw">
                 <h2>{{ data[zodiacSign]?.gender_3 }}</h2>
                 <div class="g">
-                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(194, 181, 178);">
+                    <input type="checkbox" id="toggle5">
+                <label for="toggle5">
+                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(75, 12, 12);">
                     expand_circle_down
                 </span>
+                </label>
                 <div class="g-content">
                   <p>
                     {{ data[zodiacSign]?.gender_more_3 }}
@@ -295,9 +309,12 @@
                 <div class="kw">
                 <h2>{{ data[zodiacSign]?.gender_reverse_3 }}</h2>
                 <div class="g">
-                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(194, 181, 178);">
+                    <input type="checkbox" id="toggle6">
+                <label for="toggle6">
+                <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(75, 12, 12);">
                     expand_circle_down
                 </span>
+                </label>
                 <div class="g-content">
                   <p>
                     {{ data[zodiacSign]?.gender_reverse_more_3 }}
@@ -423,7 +440,6 @@
             </div>
         </div>
         </div> 
-        <p>{{currentDate}}</p>
         </main>
         <footer>
             <div class="out">
@@ -444,7 +460,7 @@ const zodiacSign: string = params.zodiacSign as string;
 
 const data: Record<string, Record<string, string>> = {
     rat: {
-        letter: "M 77.5 3.8 L 43.9 3.8 L 43.9 13 L 65.7 13 L 65.7 18.4 L 44.5 18.4 L 44.5 27.3 L 65.7 27.3 L 65.7 33.1 L 14.8 33.1 L 14.8 27.2 L 35.8 27.2 L 35.8 18.3 L 14.8 18.3 L 14.8 12.7 C 22.2 11.8 30 10.5 36.4 8.9 L 30.7 0 C 23.567 1.981 12.703 3.963 3.362 5.166 A 229.209 229.209 0 0 1 3.1 5.2 L 3.1 42.3 L 77.5 42.3 L 77.5 3.8 Z M 50.3 62 L 44.4 68.1 L 44.4 45.2 L 33.6 45.2 L 33.6 76.1 A 10.367 10.367 0 0 1 33.391 78.242 C 32.83 80.901 31.232 82.293 29.7 83.1 A 10.874 10.874 0 0 1 30.176 83.747 C 31.561 85.77 33.102 89.17 33.756 91.456 A 13.062 13.062 0 0 1 33.9 92 C 36.3 90.8 39.9 89.9 61.4 86.8 A 32.502 32.502 0 0 1 61.321 85.602 C 61.205 83.25 61.231 79.963 61.4 77.6 L 44.4 79.7 L 44.4 68.3 C 47.698 70.528 52.029 73.551 54.631 75.811 A 24.141 24.141 0 0 1 55.5 76.6 L 61.7 69.6 A 30.437 30.437 0 0 0 60.313 68.503 C 57.54 66.424 53.422 63.856 50.3 62 Z M 15.3 79.6 L 15.3 45.1 L 4 45.1 L 4 75.9 C 4 79.643 2.249 81.553 0.499 82.618 A 9.239 9.239 0 0 1 0 82.9 A 12.666 12.666 0 0 1 0.476 83.608 C 1.86 85.811 3.401 89.447 4.055 91.91 A 14.819 14.819 0 0 1 4.2 92.5 A 10.035 10.035 0 0 1 5.067 92.08 C 7.239 91.149 11.314 90.243 24.463 88.227 A 1175.178 1175.178 0 0 1 28.6 87.6 A 30.333 30.333 0 0 1 28.528 86.522 C 28.406 84.118 28.442 80.579 28.7 78 L 15.3 79.6 Z M 73.3 44.7 L 61.7 44.7 A 314.588 314.588 0 0 0 62.139 60.261 C 63.304 80.783 67.031 92.6 76.7 92.6 A 11.355 11.355 0 0 0 81.243 91.818 C 84.37 90.462 86.176 87.142 87.014 80.341 A 62.232 62.232 0 0 0 87.3 77.4 A 19.827 19.827 0 0 1 85.7 76.739 C 83.675 75.802 81.495 74.433 79.851 72.933 A 15.686 15.686 0 0 1 79.6 72.7 C 79.447 77.597 79.06 80.035 78.349 80.91 A 0.935 0.935 0 0 1 77.6 81.3 A 2.088 2.088 0 0 1 75.999 79.852 C 74.011 75.938 72.819 64.117 73.3 44.7 Z M 50.4 46.9 L 44.8 53.1 A 269.454 269.454 0 0 1 46.746 54.355 C 50.029 56.492 53.793 59.059 55.7 60.8 L 61.6 53.9 A 32.013 32.013 0 0 0 60.324 52.937 C 57.973 51.244 54.552 49.132 51.627 47.548 A 63.714 63.714 0 0 0 50.4 46.9 Z M 27.1 60.2 L 33.3 53.5 A 56.737 56.737 0 0 0 32.262 52.732 C 29.623 50.82 25.588 48.163 22.7 46.5 L 16.8 52.4 A 135.335 135.335 0 0 1 18.634 53.664 C 21.685 55.802 25.113 58.378 27.1 60.2 Z M 26.4 75.5 L 32.7 68.5 A 58.549 58.549 0 0 0 31.617 67.741 C 29.053 65.982 25.273 63.617 22.419 61.969 A 101.938 101.938 0 0 0 22.3 61.9 L 16.4 68.1 A 157.327 157.327 0 0 1 18.185 69.309 C 20.795 71.101 23.718 73.218 25.631 74.83 A 27.154 27.154 0 0 1 26.4 75.5 Z",
+        letter: '<svg width="87.3" height="92.607" viewBox="0 0 87.3 92.607" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="#000" style="stroke:#000;stroke-width:0.25mm;fill:#000"><path d="M 77.5 3.8 L 43.9 3.8 L 43.9 13 L 65.7 13 L 65.7 18.4 L 44.5 18.4 L 44.5 27.3 L 65.7 27.3 L 65.7 33.1 L 14.8 33.1 L 14.8 27.2 L 35.8 27.2 L 35.8 18.3 L 14.8 18.3 L 14.8 12.7 C 22.2 11.8 30 10.5 36.4 8.9 L 30.7 0 C 23.567 1.981 12.703 3.963 3.362 5.166 A 229.209 229.209 0 0 1 3.1 5.2 L 3.1 42.3 L 77.5 42.3 L 77.5 3.8 Z M 50.3 62 L 44.4 68.1 L 44.4 45.2 L 33.6 45.2 L 33.6 76.1 A 10.367 10.367 0 0 1 33.391 78.242 C 32.83 80.901 31.232 82.293 29.7 83.1 A 10.874 10.874 0 0 1 30.176 83.747 C 31.561 85.77 33.102 89.17 33.756 91.456 A 13.062 13.062 0 0 1 33.9 92 C 36.3 90.8 39.9 89.9 61.4 86.8 A 32.502 32.502 0 0 1 61.321 85.602 C 61.205 83.25 61.231 79.963 61.4 77.6 L 44.4 79.7 L 44.4 68.3 C 47.698 70.528 52.029 73.551 54.631 75.811 A 24.141 24.141 0 0 1 55.5 76.6 L 61.7 69.6 A 30.437 30.437 0 0 0 60.313 68.503 C 57.54 66.424 53.422 63.856 50.3 62 Z M 15.3 79.6 L 15.3 45.1 L 4 45.1 L 4 75.9 C 4 79.643 2.249 81.553 0.499 82.618 A 9.239 9.239 0 0 1 0 82.9 A 12.666 12.666 0 0 1 0.476 83.608 C 1.86 85.811 3.401 89.447 4.055 91.91 A 14.819 14.819 0 0 1 4.2 92.5 A 10.035 10.035 0 0 1 5.067 92.08 C 7.239 91.149 11.314 90.243 24.463 88.227 A 1175.178 1175.178 0 0 1 28.6 87.6 A 30.333 30.333 0 0 1 28.528 86.522 C 28.406 84.118 28.442 80.579 28.7 78 L 15.3 79.6 Z M 73.3 44.7 L 61.7 44.7 A 314.588 314.588 0 0 0 62.139 60.261 C 63.304 80.783 67.031 92.6 76.7 92.6 A 11.355 11.355 0 0 0 81.243 91.818 C 84.37 90.462 86.176 87.142 87.014 80.341 A 62.232 62.232 0 0 0 87.3 77.4 A 19.827 19.827 0 0 1 85.7 76.739 C 83.675 75.802 81.495 74.433 79.851 72.933 A 15.686 15.686 0 0 1 79.6 72.7 C 79.447 77.597 79.06 80.035 78.349 80.91 A 0.935 0.935 0 0 1 77.6 81.3 A 2.088 2.088 0 0 1 75.999 79.852 C 74.011 75.938 72.819 64.117 73.3 44.7 Z M 50.4 46.9 L 44.8 53.1 A 269.454 269.454 0 0 1 46.746 54.355 C 50.029 56.492 53.793 59.059 55.7 60.8 L 61.6 53.9 A 32.013 32.013 0 0 0 60.324 52.937 C 57.973 51.244 54.552 49.132 51.627 47.548 A 63.714 63.714 0 0 0 50.4 46.9 Z M 27.1 60.2 L 33.3 53.5 A 56.737 56.737 0 0 0 32.262 52.732 C 29.623 50.82 25.588 48.163 22.7 46.5 L 16.8 52.4 A 135.335 135.335 0 0 1 18.634 53.664 C 21.685 55.802 25.113 58.378 27.1 60.2 Z M 26.4 75.5 L 32.7 68.5 A 58.549 58.549 0 0 0 31.617 67.741 C 29.053 65.982 25.273 63.617 22.419 61.969 A 101.938 101.938 0 0 0 22.3 61.9 L 16.4 68.1 A 157.327 157.327 0 0 1 18.185 69.309 C 20.795 71.101 23.718 73.218 25.631 74.83 A 27.154 27.154 0 0 1 26.4 75.5 Z" vector-effect="non-scaling-stroke"/></g></svg>',
         summary: "Rats are well-behaved by nature and have fun and quirky personalities. They exude superb energy in life and do what they can to garner approval from others—even if misplaced. Rat personalities also tend to exude a sense of mystery, hoarding their own secrets while observing others and adjusting how they behave. Their mystery is strategic, not selfish, so they would make great team players.",
         personality_1: "Rats are known for their resourcefulness and ability to find solutions to problems. They are intelligent, clever and charming. Thanks to their wit and charism they can easily win people over. These creatures are often flexible and able to adjust to changing circumstances. People born under this sign are ambitious and driven individuals. They are not afraid to work hard to achieve their goals and are often determined to succeed. Despite their inteligence they are still outgoing and enjoy the company of others. While Rats are ambitious, they are also cautious by nature. They tend to weigh their options carefully before making decisions and are not prone to taking unnecessary risks. They are good at managing their finances and are often careful with their money.",
         strengths: "resourcefulness",
@@ -457,7 +473,7 @@ const data: Record<string, Record<string, string>> = {
         weaknesses_3: "manipulativeness",
         weaknesses_4: "indecisiveness",
         weaknesses_5: "opportunism",
-        personality_2: "Rats love being in a group and may feel lonely when they’re on their own. They are friendly and easy-going, finding it easy to make friends despite a slight inclination to secrecy and introversion. In terms of lifestyle, Rats are frugal with a tendency to save—even to hoard. As long as they learn to withstand temptations in this area, their life will turn out quite steady and prosperous.",
+        personality_2: "Rats love being in a group and may feel lonely when they’re on their own. They are friendly and easy-going, finding it easy to make friends despite a slight inclination to secrecy and introversion. ",
         years: "Years of the Rat",
         years_1: "1924",
         years_2: "February 5, 1924 ",
@@ -1571,7 +1587,7 @@ const data: Record<string, Record<string, string>> = {
     },
     dog: {
         summary: "In Chinese astrology, the Goat, also known as the Sheep or Ram, is one of the twelve animal signs representing a twelve-year cycle. People born in the Year of the Goat are believed to inherit certain personality traits and characteristics associated with this zodiac sign.",
-        personality_1: "Goats (sometimes also translated as Rams) are the most tender and mild of the zodiac signs, known for their honest, kind, and empathic nature. They’re selflessly giving, willing to lend their last penny to their closest friends without a second thought. They’re born compassionate, so when they meet others who have suffered, Goats may grow despondent themselves. They’re also creative, almost indulgently so, with no shortage of whimsical images and ideas floating around in their mind.",
+        personality_1: "Dogs are friendly, fun-loving, and fiercely loyal to their friends and family, maintaining these relationships over a lifetime of sincerity. They are also compassionate, innocent, and romantic souls who possess a strong intuition to boot. They need praise and encouragement when they exhibit their instinct to follow and protect. This makes Dogs more of a dependable team player than a strong leader, both at work and in their love life.",
         strengths: "gentleness",
         strengths_2: "creativity",
         strengths_3: "harmony",
@@ -1582,7 +1598,7 @@ const data: Record<string, Record<string, string>> = {
         weaknesses_3: "passivity",
         weaknesses_4: "over-idealization",
         weaknesses_5: "dependence on others",
-        personality_2: "Socially, Goats are soft-spoken, elegant, and personable, meek on the outside yet strong and resilient on the inside. If anyone mistakes their docility as a weakness, however, Goats will be sure to deliver a rude awakening.",
+        personality_2: "Their logic in life is simple, so you can always count on their actions and feelings to match their words. If they flout rules—unthinkable for their own sake—it’s to protect those they love.",
         years: "Years of the Dog",
         years_1: "1922",
         years_2: "January 28, 1922",
@@ -1614,7 +1630,7 @@ const data: Record<string, Record<string, string>> = {
         years_28: "2030",
         years_29: "February 3, 2030",
         years_30: "January 22, 2031",
-        overall: "Horses embody strength, independence, and an adventurous spirit, navigating life with resilience and an unwavering pursuit of freedom and excitement.",
+        overall: "Honest and loyal, Dogs are the truest friends and most reliable partner.",
         metal: "Metal Horses are kind-hearted, outspoken, and willing to help others. They dislike advice or criticism from others, so they may be stuck on the wrong idea for too long and end up not accomplishing much. They’re just as stubborn when it comes to love, as once married, their devotion to their partner and family will prove immovable, with Metal Horses themselves maturing into calm rationality as time goes on.",
         metal_years: "1930, 1990",
         water: "Water Horses have a self-sacrificial spirit, although they can also be impatient and emotional. They’re thoughtful and suitable for great ambition because they’ll often receive unexpected help from unlikely quarters, especially from the opposite gender. Although they’re not particularly sexy, Water Horses can easily attract attention with their cheery personality. A relationship with them will require patience from their partner, but once married, they’ll quickly grow into their true potential.",
@@ -1789,7 +1805,7 @@ const data: Record<string, Record<string, string>> = {
         birth_8: "P!nk:",
         birth_more_8: "American singer, songwriter, dancer, and actress.",
         birth_9: "Renée Zellweger:",
-        birth_more_9: "American actress known for her role in 'Bridget Jones's Diary'.",
+        birth_more_9: "American actress known for her role in \"Bridget Jones's Diary\".",
         birth_10: "Matthew McConaughey:",
         birth_more_10: "American actor and producer.",
     },
@@ -1803,6 +1819,9 @@ display:flex;
 flex-direction: row; 
 padding: 30px; 
 align-items: center; 
+}
+.r svg{
+padding-right: 30px;
 }
 .r p{
 padding-left: 30px;
@@ -1868,7 +1887,7 @@ border-right: 10px double rgb(161, 41, 41);
 font-size: x-large;   
 color: rgb(161, 41, 41); 
 font-family: fantasy;
-border: 1px solid rgb(194, 181, 178);
+border: 3px solid rgb(194, 181, 178);
 padding: 3px;
 padding-left: 10px;
 padding-right: 10px;
@@ -2045,7 +2064,7 @@ justify-content: space-around;
 }
 .dropdown {
 padding-left: 70px;
-padding-right: 80px;    
+padding-right: 80px;  
 }
   
 .dropdown-content {
@@ -2054,6 +2073,8 @@ padding-right: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 20px;
     z-index: 1;
+    opacity: 0;
+    transition-duration: 2s;
   }
 .dropdown-content p{ 
     color: rgb(26, 15, 33);
@@ -2072,7 +2093,10 @@ padding-right: 80px;
 .dropdown:hover .dropdown-content {
     display: block;
     justify-content: baseline;
-  }
+    opacity: 1;
+}
+
+
 .dropdown span {
     border-radius: 25px;
     background: rgb(161, 41, 41);
@@ -2154,7 +2178,7 @@ flex-wrap: nowrap;
 }
 .compa {
 padding: 30px;    
-border-left: 10px double rgb(75, 12, 12);   
+border-left: 10px double rgb(26, 15, 33);   
 }
 .compa p{
 display: flex;
@@ -2188,7 +2212,7 @@ padding: 30px;
 padding-top: 5px;
 }
 .kw {
-background-color: rgb(194, 181, 178);
+background-color: rgb(75, 12, 12);
 text-align: center;
 }
 .kw h2::selection{
@@ -2212,7 +2236,7 @@ text-align: center;
     background: rgb(75, 12, 12);    
 }
 .gender h2{
-    color: rgb(75, 12, 12);
+    color: rgb(194, 181, 178);
     font-size: x-large;
     line-height: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -2225,7 +2249,7 @@ text-align: center;
 }
 .gender span{
     border-radius: 25px;
-    background: rgb(75, 12, 12);
+    background: rgb(194, 181, 178);
 }
 .g-content {
         display: none;
@@ -2234,6 +2258,42 @@ text-align: center;
         padding: 20px;
         z-index: 1;
         
+}
+#toggle:checked + label + .g-content {
+    display: block; /* Show content when checkbox is checked */
+}
+#toggle {
+    display:none;
+}
+#toggle2:checked + label + .g-content {
+    display: block; /* Show content when checkbox is checked */
+}
+#toggle2 {
+    display:none;
+}
+#toggle3:checked + label + .g-content {
+    display: block; /* Show content when checkbox is checked */
+}
+#toggle3 {
+    display:none;
+}
+#toggle4:checked + label + .g-content {
+    display: block; /* Show content when checkbox is checked */
+}
+#toggle4 {
+    display:none;
+}
+#toggle5:checked + label + .g-content {
+    display: block; /* Show content when checkbox is checked */
+}
+#toggle5 {
+    display:none;
+}
+#toggle6:checked + label + .g-content {
+    display: block; /* Show content when checkbox is checked */
+}
+#toggle6 {
+    display:none;
 }
 .g-content p::selection{
     color: rgb(194, 181, 178);
@@ -2246,11 +2306,7 @@ text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         letter-spacing: 1px; 
     } 
-.g:hover .g-content {
-        display: block;
-        justify-content: baseline;
-        opacity: 1;
-      }
+
 .ove {
     background-color: rgb(75, 12, 12);  
     padding-bottom: 50px;
@@ -2380,6 +2436,12 @@ justify-content: space-evenly;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;    
     font-variant: small-caps;
+    text-align: center;
+    border-bottom: 10px double rgb(75, 12, 12);
+    border-top: 10px double rgb(75, 12, 12);
+    padding: 30px;
+    background-color: rgb(194, 181, 178);
+    font-weight: bold;
 }
 .out a::selection{
     color: rgb(194, 181, 178);
