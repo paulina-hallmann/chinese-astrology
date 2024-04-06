@@ -128,7 +128,7 @@
               <div class="dropdown">
                 <span class="material-symbols-outlined" style="font-size: xxx-large;color:rgb(238, 228, 169);">
                   expand_circle_down
-                  </span>
+                </span>
                 <div class="dropdown-content">
                   <p>
                     {{ data[zodiacSign]?.water}}
@@ -2053,6 +2053,7 @@ border-top: 30px double rgb(238, 228, 169);
 display: flex;    
 flex-direction: row;
 justify-content: space-around;
+position: relative;
 }
 .earth h2::selection{
     color: rgb(194, 181, 178);
@@ -2064,17 +2065,20 @@ justify-content: space-around;
 }
 .dropdown {
 padding-left: 70px;
-padding-right: 80px;  
+padding-right: 80px;
 }
   
 .dropdown-content {
-    display: none;
     background-color: rgb(194, 181, 178);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 20px;
-    z-index: 1;
+    padding: 10px;
     opacity: 0;
-    transition-duration: 2s;
+    transition-duration: 300ms;
+    position: absolute;
+    top: calc(100% - 30px);
+    left: 50%;
+    width: 90vw;
+    transform: translateX(-50%);
   }
 .dropdown-content p{ 
     color: rgb(26, 15, 33);
@@ -2090,8 +2094,7 @@ padding-right: 80px;
     color: rgb(194, 181, 178);
     background: rgb(75, 12, 12);    
 }
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown .material-symbols-outlined:hover + .dropdown-content {
     justify-content: baseline;
     opacity: 1;
 }

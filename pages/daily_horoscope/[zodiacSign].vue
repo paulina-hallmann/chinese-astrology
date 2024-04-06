@@ -38,18 +38,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: rgb(238, 228, 169);
+    height: 500px;
+    padding: 50px;
 }
 .da h4 {
     text-align: center;
 }
 .da h1{
     font-size: 200px;
+    margin: 0px;
 }
 .dail h2 {
     font-size: xxx-large;  
     font-family: fantasy;
-    color: rgb(143, 143, 143); 
+    color: rgb(238, 228, 169); 
     letter-spacing: 1px;
     justify-content: center;
     padding: 30px;
@@ -65,7 +70,6 @@ letter-spacing: 1px;
 text-align: justify;
 }
 .dail {
-    width: 500px;
 }
 </style>
 
