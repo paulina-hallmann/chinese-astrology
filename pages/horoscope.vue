@@ -3,24 +3,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <main>
         <div class="Check">
-            <p>Check out horoscope for your sign!!</p>
+            <p>Check out horoscope for your sign</p>
         </div>
-        <div class="h">
-            <div class="ho">
+        <div class="ho">
                 <div v-for="zodiacSign in zodiacSigns">
                     <p style="text-transform: capitalize;">{{ zodiacSign }}</p>
-                    <div class="horoscop">
                         <div class="horosc">
                             <NuxtLink :to="'/daily_horoscope/' + zodiacSign">
                                 daily horoscope
                             </NuxtLink>
-                        </div>
-                        <div class="horosco">
-                            <NuxtLink to="#">
-                                yearly horoscope
-                            </NuxtLink>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>        
@@ -32,29 +23,37 @@
     display: flex;
     font-size: xxx-large;  
     font-family: fantasy;
-    color: rgb(143, 143, 143); 
+    color: rgb(26, 15, 33); 
     letter-spacing: 1px;
     justify-content: center;
     padding: 30px;
     padding-bottom: 0px;
 }
-.h {
+.Check p::selection{
+        color: rgb(194, 181, 178);
+        background: rgb(75, 12, 12);    
+}
+.ho {
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: center;
 }
-.h p{
-    color: rgb(238, 228, 169);
+.ho p{
+    color: rgb(75, 12, 12);
     font-size: xx-large;
     line-height: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px; 
     padding: 30px;
     font-variant: small-caps;
+    text-align: center;
+}
+.ho p::selection{
+        color: rgb(194, 181, 178);
+        background: rgb(75, 12, 12);    
 }
 .ho {
     display: flex;
@@ -63,48 +62,33 @@
     justify-content: space-evenly;
     gap: 10px;
 }
-.hor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.horo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.horos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.horosco {
-    background-color: rgb(161, 41, 41);
-    border-radius: 10px;
-    border: 3px solid rgb(238, 228, 169);
-}
 .horosc {
     background-color: rgb(161, 41, 41); 
     border-radius: 10px;
-    border: 3px solid rgb(238, 228, 169);
-}
-.horoscop {
+    border: 3px solid rgb(26, 15, 33);
+    gap: 30px;
+    width: 200px;
+    height: 50px;
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    background-color: rgb(26, 15, 32);
+    justify-content: center;
 }
-.horoscop a{
-    padding-top: 10px;
-    padding-bottom: 15px;
+.horosc a{
     display: flex;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding: 5px;
     color: rgb(238, 228, 169);
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
 }
-.horoscop a:hover {
+.horosc a::selection{
+        color: rgb(194, 181, 178);
+        background: rgb(75, 12, 12);    
+}
+.horosc a:hover {
     color: rgb(75, 12, 12);
 }
 
@@ -114,13 +98,15 @@
     const zodiacSigns: string[] = [
         'rat',
         'ox',
-        'goat',
-        'dragon',
-        'snake',
-        'pig',
-        'dog',
-        'rooster',
         'tiger',
         'rabbit',
+        'dragon',
+        'snake',
+        'horse',
+        'goat',
+        'monkey',
+        'rooster',
+        'dog',
+        'pig',
     ]
 </script>

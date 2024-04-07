@@ -10,11 +10,11 @@
             <h2>The Chinese zodiac system
             </h2>
             <div class="more">
-                <img src="https://i.pinimg.com/564x/1d/3d/dd/1d3ddda2c8cfab628935b348061919e4.jpg" title="author">
+                <img src="https://i.pinimg.com/564x/37/e9/33/37e93375b012e09b41df10eb6b54842e.jpg" title="author">
                 <p> Chinese astrology, deeply rooted in ancient philosophy and culture, offers a fascinating lens through which to understand the dynamics of life. Unlike Western astrology, which is predominantly based on the position of celestial bodies at the time of birth, Chinese astrology is centered around the lunar calendar and the twelve animals of the Chinese zodiac.
 At the heart of Chinese astrology is the belief that each person's destiny and character are influenced by the animal sign under which they were born. These twelve animals—rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog, and pig—rotate in a cycle, with each year corresponding to a particular animal. Individuals born under a specific animal sign are said to possess certain traits and characteristics associated with that animal.  Furthermore, the interactions between different animal signs can be analyzed to predict compatibility in relationships and partnerships. Throughout history, Chinese astrology has remained deeply ingrained in Chinese culture, influencing everything from daily life decisions to governmental policies. Its enduring popularity speaks to its enduring relevance and the belief in its power to provide insights into the mysteries of fate and destiny. Whether embraced as a guiding philosophy or simply enjoyed as a cultural tradition, Chinese astrology continues to captivate and intrigue people around the world. 
               </p>
-              <img src="https://i.pinimg.com/564x/1d/3d/dd/1d3ddda2c8cfab628935b348061919e4.jpg" title="author">
+              <img src="https://i.pinimg.com/564x/37/e9/33/37e93375b012e09b41df10eb6b54842e.jpg" title="author">
             </div>
           </div>
                 <div class="with-table">
@@ -319,10 +319,9 @@ At the heart of Chinese astrology is the belief that each person's destiny and c
 .zodiac {
     display: flex;
     justify-content: center;
-    background-image: url(https://i.pinimg.com/564x/29/cc/06/29cc0670039ecfcf49a96ed26e800dde.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom: 10px double rgb(212, 198, 119);
+    background-image: url(https://i.pinimg.com/564x/78/db/0c/78db0c27c47bc57970fa9bdd7a53861a.jpg);
+    
+    border-bottom: 10px double rgb(75, 12, 12);
 }
   
 .zodiac p {

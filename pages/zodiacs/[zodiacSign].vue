@@ -17,7 +17,7 @@
         </p>
         <div class="person">
             <div class="perso"><h2>Strengths</h2>
-                <ul style="list-style-type:circle">
+                <ul  style="list-style-type: square;">
                 <li> {{ data[zodiacSign]?.strengths }} </li>
                 <li> {{ data[zodiacSign]?.strengths_2}} </li>
                 <li> {{ data[zodiacSign]?.strengths_3}} </li>
@@ -25,13 +25,13 @@
                 <li> {{ data[zodiacSign]?.strengths_5}} </li>
               </ul></div>
             <div class="perso"><h2>Weaknesses</h2> 
-                <ul style="list-style-type:circle">
+                <ul  style="list-style-type: square;">
                 <li>{{ data[zodiacSign]?.weaknesses}}</li>
                 <li>{{ data[zodiacSign]?.weaknesses_2}}</li>
                 <li>{{ data[zodiacSign]?.weaknesses_3}}</li>
                 <li>{{ data[zodiacSign]?.weaknesses_4}}</li>
                 <li>{{ data[zodiacSign]?.weaknesses_5}}</li>
-              </ul>
+                </ul>
             </div>
             <div class="persona"> 
             <p>
@@ -181,7 +181,57 @@
             </div>
             <div class="compatibility">
               <div class="comp">
-              <h1>Compatibility</h1>
+              <h1> <span class="material-symbols-outlined">
+                favorite
+                </span> 
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+                Compatibility
+                <span class="material-symbols-outlined">
+                favorite
+            </span>
+            <span class="material-symbols-outlined">
+                favorite
+                </span>
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+                <span class="material-symbols-outlined">
+                favorite
+                </span>
+            </h1>
+              
               <p>
                 {{ data[zodiacSign]?.compatibility }}
             </p>
@@ -359,7 +409,7 @@
               </div>
               <div class="u">
               <div class="things"><h2>Lucky things</h2>
-                <ul style="list-style-type:circle">
+                <ul style="list-style-type:square">
                 <li><div class="l"><h4>numbers - </h4><p>{{ data[zodiacSign]?.lucky_1 }} </p></div></li>
                 <li><div class="l"><h4>colors - </h4><p> {{ data[zodiacSign]?.lucky_2 }}</p></div></li>
                 <li><div class="l"><h4>directions - </h4><p> {{ data[zodiacSign]?.lucky_3 }}</p></div></li>
@@ -369,7 +419,7 @@
                 <li><div class="l"><h4>charms - </h4><p>{{ data[zodiacSign]?.lucky_7 }}</p></div></li>
               </ul></div>
             <div class="things"><h2>Unlucky things</h2> 
-                <ul style="list-style-type:circle">
+                <ul style="list-style-type:square">
                   <li><div class="l"><h4>numbers - </h4><p>{{ data[zodiacSign]?.unlucky_1 }}</p></div></li>
                   <li><div class="l"><h4>colors - </h4><p>{{ data[zodiacSign]?.unlucky_2 }}</p></div></li>
                   <li><div class="l"><h4>directions - </h4><p>{{ data[zodiacSign]?.unlucky_3 }}</p></div></li>
@@ -443,12 +493,10 @@
         </main>
         <footer>
             <div class="out">
-                <p>Check out the <NuxtLink to="{{ data[zodiacSign]?.daily }}">
+                <p>Check out the <NuxtLink :to="'/daily_horoscope/' + zodiacSign">
                daily
-            </NuxtLink>/<NuxtLink to="{{ data[zodiacSign]?.yearly }}">
-               yearly
-            </NuxtLink>
-                horoscope for {{ data[zodiacSign]?.out }}</p>
+               </NuxtLink>
+                horoscope for {{zodiacSign}}</p>
             </div>
         </footer>
 </template>
@@ -460,8 +508,8 @@ const zodiacSign: string = params.zodiacSign as string;
 
 const data: Record<string, Record<string, string>> = {
     rat: {
-        letter: '<svg width="87.3" height="92.607" viewBox="0 0 87.3 92.607" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="#000" style="stroke:#000;stroke-width:0.25mm;fill:#000"><path d="M 77.5 3.8 L 43.9 3.8 L 43.9 13 L 65.7 13 L 65.7 18.4 L 44.5 18.4 L 44.5 27.3 L 65.7 27.3 L 65.7 33.1 L 14.8 33.1 L 14.8 27.2 L 35.8 27.2 L 35.8 18.3 L 14.8 18.3 L 14.8 12.7 C 22.2 11.8 30 10.5 36.4 8.9 L 30.7 0 C 23.567 1.981 12.703 3.963 3.362 5.166 A 229.209 229.209 0 0 1 3.1 5.2 L 3.1 42.3 L 77.5 42.3 L 77.5 3.8 Z M 50.3 62 L 44.4 68.1 L 44.4 45.2 L 33.6 45.2 L 33.6 76.1 A 10.367 10.367 0 0 1 33.391 78.242 C 32.83 80.901 31.232 82.293 29.7 83.1 A 10.874 10.874 0 0 1 30.176 83.747 C 31.561 85.77 33.102 89.17 33.756 91.456 A 13.062 13.062 0 0 1 33.9 92 C 36.3 90.8 39.9 89.9 61.4 86.8 A 32.502 32.502 0 0 1 61.321 85.602 C 61.205 83.25 61.231 79.963 61.4 77.6 L 44.4 79.7 L 44.4 68.3 C 47.698 70.528 52.029 73.551 54.631 75.811 A 24.141 24.141 0 0 1 55.5 76.6 L 61.7 69.6 A 30.437 30.437 0 0 0 60.313 68.503 C 57.54 66.424 53.422 63.856 50.3 62 Z M 15.3 79.6 L 15.3 45.1 L 4 45.1 L 4 75.9 C 4 79.643 2.249 81.553 0.499 82.618 A 9.239 9.239 0 0 1 0 82.9 A 12.666 12.666 0 0 1 0.476 83.608 C 1.86 85.811 3.401 89.447 4.055 91.91 A 14.819 14.819 0 0 1 4.2 92.5 A 10.035 10.035 0 0 1 5.067 92.08 C 7.239 91.149 11.314 90.243 24.463 88.227 A 1175.178 1175.178 0 0 1 28.6 87.6 A 30.333 30.333 0 0 1 28.528 86.522 C 28.406 84.118 28.442 80.579 28.7 78 L 15.3 79.6 Z M 73.3 44.7 L 61.7 44.7 A 314.588 314.588 0 0 0 62.139 60.261 C 63.304 80.783 67.031 92.6 76.7 92.6 A 11.355 11.355 0 0 0 81.243 91.818 C 84.37 90.462 86.176 87.142 87.014 80.341 A 62.232 62.232 0 0 0 87.3 77.4 A 19.827 19.827 0 0 1 85.7 76.739 C 83.675 75.802 81.495 74.433 79.851 72.933 A 15.686 15.686 0 0 1 79.6 72.7 C 79.447 77.597 79.06 80.035 78.349 80.91 A 0.935 0.935 0 0 1 77.6 81.3 A 2.088 2.088 0 0 1 75.999 79.852 C 74.011 75.938 72.819 64.117 73.3 44.7 Z M 50.4 46.9 L 44.8 53.1 A 269.454 269.454 0 0 1 46.746 54.355 C 50.029 56.492 53.793 59.059 55.7 60.8 L 61.6 53.9 A 32.013 32.013 0 0 0 60.324 52.937 C 57.973 51.244 54.552 49.132 51.627 47.548 A 63.714 63.714 0 0 0 50.4 46.9 Z M 27.1 60.2 L 33.3 53.5 A 56.737 56.737 0 0 0 32.262 52.732 C 29.623 50.82 25.588 48.163 22.7 46.5 L 16.8 52.4 A 135.335 135.335 0 0 1 18.634 53.664 C 21.685 55.802 25.113 58.378 27.1 60.2 Z M 26.4 75.5 L 32.7 68.5 A 58.549 58.549 0 0 0 31.617 67.741 C 29.053 65.982 25.273 63.617 22.419 61.969 A 101.938 101.938 0 0 0 22.3 61.9 L 16.4 68.1 A 157.327 157.327 0 0 1 18.185 69.309 C 20.795 71.101 23.718 73.218 25.631 74.83 A 27.154 27.154 0 0 1 26.4 75.5 Z" vector-effect="non-scaling-stroke"/></g></svg>',
-        summary: "Rats are well-behaved by nature and have fun and quirky personalities. They exude superb energy in life and do what they can to garner approval from others—even if misplaced. Rat personalities also tend to exude a sense of mystery, hoarding their own secrets while observing others and adjusting how they behave. Their mystery is strategic, not selfish, so they would make great team players.",
+        letter: '<svg width="250" height="250" viewBox="0 0 87.3 92.607" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(75, 12, 12)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(75, 12, 12);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d="M 77.5 3.8 L 43.9 3.8 L 43.9 13 L 65.7 13 L 65.7 18.4 L 44.5 18.4 L 44.5 27.3 L 65.7 27.3 L 65.7 33.1 L 14.8 33.1 L 14.8 27.2 L 35.8 27.2 L 35.8 18.3 L 14.8 18.3 L 14.8 12.7 C 22.2 11.8 30 10.5 36.4 8.9 L 30.7 0 C 23.567 1.981 12.703 3.963 3.362 5.166 A 229.209 229.209 0 0 1 3.1 5.2 L 3.1 42.3 L 77.5 42.3 L 77.5 3.8 Z M 50.3 62 L 44.4 68.1 L 44.4 45.2 L 33.6 45.2 L 33.6 76.1 A 10.367 10.367 0 0 1 33.391 78.242 C 32.83 80.901 31.232 82.293 29.7 83.1 A 10.874 10.874 0 0 1 30.176 83.747 C 31.561 85.77 33.102 89.17 33.756 91.456 A 13.062 13.062 0 0 1 33.9 92 C 36.3 90.8 39.9 89.9 61.4 86.8 A 32.502 32.502 0 0 1 61.321 85.602 C 61.205 83.25 61.231 79.963 61.4 77.6 L 44.4 79.7 L 44.4 68.3 C 47.698 70.528 52.029 73.551 54.631 75.811 A 24.141 24.141 0 0 1 55.5 76.6 L 61.7 69.6 A 30.437 30.437 0 0 0 60.313 68.503 C 57.54 66.424 53.422 63.856 50.3 62 Z M 15.3 79.6 L 15.3 45.1 L 4 45.1 L 4 75.9 C 4 79.643 2.249 81.553 0.499 82.618 A 9.239 9.239 0 0 1 0 82.9 A 12.666 12.666 0 0 1 0.476 83.608 C 1.86 85.811 3.401 89.447 4.055 91.91 A 14.819 14.819 0 0 1 4.2 92.5 A 10.035 10.035 0 0 1 5.067 92.08 C 7.239 91.149 11.314 90.243 24.463 88.227 A 1175.178 1175.178 0 0 1 28.6 87.6 A 30.333 30.333 0 0 1 28.528 86.522 C 28.406 84.118 28.442 80.579 28.7 78 L 15.3 79.6 Z M 73.3 44.7 L 61.7 44.7 A 314.588 314.588 0 0 0 62.139 60.261 C 63.304 80.783 67.031 92.6 76.7 92.6 A 11.355 11.355 0 0 0 81.243 91.818 C 84.37 90.462 86.176 87.142 87.014 80.341 A 62.232 62.232 0 0 0 87.3 77.4 A 19.827 19.827 0 0 1 85.7 76.739 C 83.675 75.802 81.495 74.433 79.851 72.933 A 15.686 15.686 0 0 1 79.6 72.7 C 79.447 77.597 79.06 80.035 78.349 80.91 A 0.935 0.935 0 0 1 77.6 81.3 A 2.088 2.088 0 0 1 75.999 79.852 C 74.011 75.938 72.819 64.117 73.3 44.7 Z M 50.4 46.9 L 44.8 53.1 A 269.454 269.454 0 0 1 46.746 54.355 C 50.029 56.492 53.793 59.059 55.7 60.8 L 61.6 53.9 A 32.013 32.013 0 0 0 60.324 52.937 C 57.973 51.244 54.552 49.132 51.627 47.548 A 63.714 63.714 0 0 0 50.4 46.9 Z M 27.1 60.2 L 33.3 53.5 A 56.737 56.737 0 0 0 32.262 52.732 C 29.623 50.82 25.588 48.163 22.7 46.5 L 16.8 52.4 A 135.335 135.335 0 0 1 18.634 53.664 C 21.685 55.802 25.113 58.378 27.1 60.2 Z M 26.4 75.5 L 32.7 68.5 A 58.549 58.549 0 0 0 31.617 67.741 C 29.053 65.982 25.273 63.617 22.419 61.969 A 101.938 101.938 0 0 0 22.3 61.9 L 16.4 68.1 A 157.327 157.327 0 0 1 18.185 69.309 C 20.795 71.101 23.718 73.218 25.631 74.83 A 27.154 27.154 0 0 1 26.4 75.5 Z" vector-effect="non-scaling-stroke"/></g></svg>',
+        summary: "In Chinese astrology, the Rat is the first animal in the twelve-year cycle of the Chinese zodiac. People born in the Year of the Rat are believed to inherit characteristics associated with this zodiac sign. The Rat is associated with the first Earthly Branch symbol 子.",
         personality_1: "Rats are known for their resourcefulness and ability to find solutions to problems. They are intelligent, clever and charming. Thanks to their wit and charism they can easily win people over. These creatures are often flexible and able to adjust to changing circumstances. People born under this sign are ambitious and driven individuals. They are not afraid to work hard to achieve their goals and are often determined to succeed. Despite their inteligence they are still outgoing and enjoy the company of others. While Rats are ambitious, they are also cautious by nature. They tend to weigh their options carefully before making decisions and are not prone to taking unnecessary risks. They are good at managing their finances and are often careful with their money.",
         strengths: "resourcefulness",
         strengths_2: "adaptability",
@@ -576,7 +624,7 @@ const data: Record<string, Record<string, string>> = {
         yearly: "horoscope/rat/yearly",
     },
     ox: {
-        
+        letter: '<svg width="250" height="250" viewBox="0 0 92.5 93.4" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(75, 12, 12)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(75, 12, 12);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d="M 92.5 48.5 L 54.6 48.5 L 54.6 28.5 L 86.8 28.5 L 86.8 16.8 L 54.6 16.8 L 54.6 0 L 42 0 L 42 16.8 L 25.7 16.8 C 27.1 12.8 28.3 8.7 29.4 4.5 L 17.1 2.1 C 13.9 15.8 7.8 29.5 0 37.6 C 2.713 38.825 7.492 41.198 10.387 42.912 A 29.799 29.799 0 0 1 11.5 43.6 A 64.429 64.429 0 0 0 16.009 37.161 A 109.206 109.206 0 0 0 20.8 28.5 L 42 28.5 L 42 48.5 L 1.6 48.5 L 1.6 60.3 L 42 60.3 L 42 93.4 L 54.6 93.4 L 54.6 60.3 L 92.5 60.3 L 92.5 48.5 Z" vector-effect="non-scaling-stroke"/></g></svg>',
         summary: "In Chinese astrology, the Ox is the second animal in the Chinese zodiac cycle. People born in the Year of the Ox are believed to possess certain personality traits and characteristics associated with this animal.",
         personality_1: "Ox are diligent with a strong sense of responsibility. Although not usually charismatic, they’re nonetheless loved for their ability to “anchor,” whether at work or in their love life. This is because although the Ox personality is gentle in nature, Oxen are capable of great courage when it’s time to step up—especially when no one else will, and overcome any difficulty, which many find rather reassuring.",
         strengths: "dependability",
@@ -689,6 +737,7 @@ const data: Record<string, Record<string, string>> = {
         birth_more_10: "Pakistani activist for female education.",
     },
     tiger: {
+        letter: '<svg width="250" height="250" viewBox="0 0 93 93.7" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(75, 12, 12)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(75, 12, 12);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d="M 20.6 29.4 L 37 29.4 L 37 36.8 L 23.2 38.1 L 24.2 46.8 L 37 45.5 L 37 45.8 A 23.499 23.499 0 0 0 37.385 50.433 C 38.562 56.213 42.687 58 53.1 58 L 71.4 58 A 29.844 29.844 0 0 0 75.931 57.707 C 81.664 56.816 84.025 53.719 85 46 A 32.506 32.506 0 0 1 83.35 45.622 C 80.577 44.914 77.304 43.741 75.4 42.5 A 41.478 41.478 0 0 1 75.16 44.387 C 74.555 48.311 73.537 49 70.3 49 L 54.2 49 A 53.388 53.388 0 0 1 52.478 48.977 C 48.889 48.859 48.2 48.225 48.2 45.6 L 48.2 44.4 L 72.5 42.1 L 71.7 33.7 L 48.2 35.8 L 48.2 29.4 L 78 29.4 A 78.014 78.014 0 0 1 77.181 32.225 C 76.901 33.128 76.617 33.987 76.341 34.786 A 81.133 81.133 0 0 1 75.8 36.3 L 85.6 38.7 C 86.997 35.465 88.61 30.878 90.082 26.291 A 270.716 270.716 0 0 0 91.6 21.4 L 83.5 19.5 L 81.7 19.8 L 50 19.8 L 50 14.7 L 82.4 14.7 L 82.4 6.2 L 50 6.2 L 50 0 L 38.4 0 L 38.4 19.8 L 8.8 19.8 L 8.8 48.1 C 8.8 53.179 8.672 58.896 7.896 64.613 A 45.382 45.382 0 0 1 0 86.1 A 14.719 14.719 0 0 1 1.077 86.705 C 3.548 88.217 7.104 91.081 9.051 93.103 A 16.045 16.045 0 0 1 9.6 93.7 A 46.299 46.299 0 0 0 17.168 77.774 C 19.969 67.815 20.6 56.833 20.6 48.1 L 20.6 29.4 Z M 69.7 79 L 69.7 60.8 L 33 60.8 A 139.605 139.605 0 0 1 32.869 67.912 C 32.368 77.448 30.012 81.461 19.303 83.9 A 61.48 61.48 0 0 1 17.4 84.3 C 19.482 86.382 22.012 90.256 22.871 92.954 A 8.557 8.557 0 0 1 23 93.4 C 38.6 90.1 42.8 83.3 43.8 70 L 58.7 70 L 58.7 79.2 A 31.051 31.051 0 0 0 58.962 83.586 C 59.711 88.765 62.221 90.989 68.469 91.42 A 36.87 36.87 0 0 0 71 91.5 L 81.2 91.5 C 88.542 91.5 91.448 88.378 92.672 77.068 A 98.693 98.693 0 0 0 93 73.3 A 21.852 21.852 0 0 1 91.544 72.942 C 88.776 72.166 85.341 70.719 83.4 69.2 C 83.183 77.284 82.863 80.471 81.723 81.619 A 2.253 2.253 0 0 1 80 82.2 L 72.7 82.2 A 12.501 12.501 0 0 1 71.659 82.165 C 69.987 82.022 69.7 81.373 69.7 79 Z" vector-effect="non-scaling-stroke"/></g></svg>',
         summary: "In Chinese astrology, the Tiger is one of the twelve zodiac signs. Each year is associated with one of these signs in a twelve-year cycle, and the Tiger is the third sign in the cycle. People born in the year of the Tiger are believed to possess certain characteristics and traits associated with that animal. ",
         personality_1: "Tigers personality is fiercely independent, confident, and bold. Tigers are charismatic and enthusiastic by nature, although these big cats are usually not gregarious, and always seem to possess an endlessly infectious energy that keeps others engaged, especially as leaders at work. Anyone who’s crossed paths with Tigers would be struck by their natural presence. Their vitality is apparent at a glance, and people are instinctively drawn to this larger-than-life quality in these swashbuckling characters.",
         strengths: "courageous",
@@ -802,6 +851,7 @@ const data: Record<string, Record<string, string>> = {
     },
 
     rabbit: {
+        letter: '<svg width="250" height="250" viewBox="0 0 94.9 94" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(75, 12, 12)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(75, 12, 12);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d="M 73.2 61.2 L 86.7 61.2 L 86.7 25.8 L 59 25.8 A 108.568 108.568 0 0 0 63.584 19.794 C 64.792 18.095 65.93 16.396 66.963 14.761 A 91.503 91.503 0 0 0 68.7 11.9 L 60.4 6.4 L 58.5 6.9 L 38.5 6.9 A 100.956 100.956 0 0 0 39.838 4.6 A 110.078 110.078 0 0 0 41.1 2.3 L 28.5 0 A 70.027 70.027 0 0 1 24.857 6.556 C 21.696 11.604 17.608 16.785 12.563 21.629 A 80.49 80.49 0 0 1 0 31.5 A 17.516 17.516 0 0 1 1.092 32.341 C 3.645 34.46 6.719 37.961 8.2 40.4 L 11.8 37.7 L 11.8 61.2 L 36.7 61.2 A 34.226 34.226 0 0 1 27.231 72.66 C 22.239 76.608 15.531 79.95 6.48 82.567 A 109.057 109.057 0 0 1 1.4 83.9 A 24.006 24.006 0 0 1 2.265 84.852 C 4.473 87.41 6.793 91.044 7.816 93.769 A 13.525 13.525 0 0 1 7.9 94 A 98.364 98.364 0 0 0 21.963 89.209 C 34.615 83.711 42.257 76.408 46.997 67.777 A 48.178 48.178 0 0 0 49.2 63.2 L 49.2 79.1 A 32.934 32.934 0 0 0 49.537 84.228 C 50.45 89.946 53.395 92.469 60.485 93.122 A 48.541 48.541 0 0 0 64.9 93.3 L 80.5 93.3 A 23.82 23.82 0 0 0 85.645 92.83 C 90.429 91.762 92.887 88.691 94.191 81.836 A 58.29 58.29 0 0 0 94.9 76.7 A 33.258 33.258 0 0 1 93.303 76.282 C 90.463 75.468 86.97 74.119 84.8 72.7 L 85.1 72.5 A 29.929 29.929 0 0 0 83.47 70.608 C 80.793 67.722 76.851 64.262 73.39 61.359 A 263.894 263.894 0 0 0 73.2 61.2 Z M 61.1 79 L 61.1 61.2 L 70.7 61.2 L 64.3 66.5 C 68.218 69.973 73.167 74.873 75.969 78.376 A 28.477 28.477 0 0 1 76.9 79.6 L 84.3 73.2 C 83.837 80.694 83.118 82.453 80.162 82.674 A 10.247 10.247 0 0 1 79.4 82.7 L 66.3 82.7 A 31.426 31.426 0 0 1 64.65 82.664 C 61.799 82.512 61.146 81.804 61.102 79.294 A 16.81 16.81 0 0 1 61.1 79 Z M 74.3 50.8 L 52.9 50.8 A 151.343 151.343 0 0 0 54.707 38.099 A 275.701 275.701 0 0 0 54.9 36.2 L 74.3 36.2 L 74.3 50.8 Z M 23.4 50.8 L 23.4 36.2 L 42.4 36.2 C 42 41.4 41.5 46.2 40.4 50.8 L 23.4 50.8 Z M 45.1 25.8 L 24.7 25.8 C 27.4 22.9 29.7 20 32 16.9 L 51.6 16.9 A 101.481 101.481 0 0 1 46.762 23.664 A 258.036 258.036 0 0 1 45.1 25.8 Z" vector-effect="non-scaling-stroke"/></g></svg>',
         summary: "In Chinese astrology, the Rabbit is one of the twelve animal signs representing a twelve-year cycle. People born in the Year of the Rabbit (also known as the Year of the Hare) are believed to inherit certain personality traits and characteristics associated with this zodiac sign.",
         personality_1: "Rabbits are elegant, imaginative, and courteous to others—even their enemies—because they hate any kind of conflict. They possess a keen perception of reality, which makes Rabbits the ultimate adapters to the real world. Unexpectedly, Rabbits are savvy in business and financial transactions and are good at finding win-win solutions in complex situations. They adore an abundant lifestyle and prefer not to be stressed out most of the time.",
         strengths: "gentleness",
@@ -914,6 +964,7 @@ const data: Record<string, Record<string, string>> = {
         birth_more_10: "American former professional basketball player.",
     },
     dragon: {
+        letter: '<svg width="250" height="250" viewBox="0 0 94.3 92.6" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(75, 12, 12)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(75, 12, 12);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d="M 61 75.5 L 61 75.1 C 72.1 65.9 81.6 54.7 88.8 41.7 L 77.7 37.1 C 73.5 45.4 67.7 53 61 59.7 L 61 33.4 L 92.2 33.4 L 92.2 22.3 L 42 22.3 C 42.7 15.5 43.2 8.2 43.5 0.5 L 31 0 A 347.256 347.256 0 0 1 30.366 14.295 A 233.885 233.885 0 0 1 29.7 22.3 L 2.2 22.3 L 2.2 33.4 L 28.3 33.4 A 102.936 102.936 0 0 1 23.359 53.637 A 52.71 52.71 0 0 1 0 82.4 C 2.776 84.78 7.519 89.912 9.061 92.533 A 9.003 9.003 0 0 1 9.1 92.6 A 68.749 68.749 0 0 0 36.534 52.727 A 141.877 141.877 0 0 0 40.6 33.4 L 48.9 33.4 L 48.9 69.9 C 42.7 74.5 36 78.3 28.9 81.4 C 31.808 83.921 35.092 87.663 36.93 90.531 A 22.15 22.15 0 0 1 37.1 90.8 C 41.4 88.6 45.7 86.1 49.7 83.6 A 10.229 10.229 0 0 0 51.681 87.71 C 53.36 89.71 55.959 90.782 59.869 91.195 A 42.419 42.419 0 0 0 64.3 91.4 L 79.6 91.4 A 21.143 21.143 0 0 0 84.905 90.827 C 89.788 89.553 92.229 86.021 93.565 78.862 A 66.028 66.028 0 0 0 94.3 73.6 C 90.9 72.9 86 70.9 83.5 69 A 136.85 136.85 0 0 1 83.265 72.217 C 82.678 78.945 81.738 80.4 78.5 80.4 L 65.9 80.4 C 61.7 80.4 61 79.8 61 75.5 Z M 72.6 22.3 L 80.9 15.1 A 55.892 55.892 0 0 0 78.643 13.083 C 74.236 9.331 67.672 4.56 62.8 1.2 L 54.9 7.5 A 498.14 498.14 0 0 1 57.989 9.874 C 63.322 14.008 69.35 18.883 72.6 22.3 Z" vector-effect="non-scaling-stroke"/></g></svg>',
         summary: "In Chinese astrology, the Dragon is one of the twelve animal signs that represent different personality traits and characteristics. The Dragon is the only mythical creature among the twelve signs.",
         personality_1: "Dragons present themselves as magnificent yet benevolent rulers who’re confident, generous, idealistic, and ambitious. In Chinese culture, these mythical creatures are in a class of their own, regarded as the givers of abundance and longevity. Dragon’s confidence is neither false nor empty, as they hold lofty ideals they’re striving toward— usually for the benefit of their community instead of themselves. They are independent thinkers who’ll never yield their highest conviction.",
         strengths: "ambition",
@@ -1026,7 +1077,8 @@ const data: Record<string, Record<string, string>> = {
         birth_more_10: "Queen of England and Ireland from 1558 until her death in 1603.",
     },
     snake: {
-        summary: "In Chinese astrology, the Dragon is one of the twelve animal signs that represent different personality traits and characteristics. The Dragon is the only mythical creature among the twelve signs.",
+        letter: '<svg width="250" height="250" viewBox="0 0 94.3 92.705" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(75, 12, 12)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(75, 12, 12);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d="M 62.1 77.6 L 62.1 63.6 A 142.62 142.62 0 0 0 68.584 60.677 C 75.511 57.359 83.036 53.195 89.313 49.269 A 175.647 175.647 0 0 0 89.9 48.9 L 81.9 40.9 A 80.136 80.136 0 0 1 78.463 43.374 C 73.671 46.649 67.664 50.159 62.1 53.1 L 62.1 33.6 L 53.3 33.6 L 53.3 25.5 L 81.5 25.5 L 81.5 35.3 L 92.6 35.3 L 92.6 15.5 L 69.2 15.5 L 74.9 13.6 C 73.608 10.277 71.293 5.079 68.978 0.996 A 54.393 54.393 0 0 0 68.4 0 L 57.8 3 C 59.263 6.088 60.923 9.901 62.192 13.261 A 76.289 76.289 0 0 1 63 15.5 L 42.7 15.5 L 42.7 35.3 L 51.1 35.3 L 51.1 77.6 A 40.706 40.706 0 0 0 51.39 82.861 C 52.371 90.294 56.048 92.7 65.5 92.7 L 80.1 92.7 C 89.583 92.7 92.771 88.473 94.099 74.732 A 119.929 119.929 0 0 0 94.3 72.4 A 23.537 23.537 0 0 1 92.73 71.97 C 89.863 71.086 86.295 69.508 84.2 68 C 83.7 80.1 83.1 82.4 79.1 82.4 L 67 82.4 A 23.835 23.835 0 0 1 65.397 82.356 C 62.543 82.16 62.1 81.209 62.1 77.6 Z M 33.3 72.7 L 27.1 73.5 L 27.1 57.2 L 40.8 57.2 L 40.8 19.1 L 27.2 19.1 L 27.2 1.5 L 16.6 1.5 L 16.6 19.1 L 3.2 19.1 L 3.2 61.1 L 12.2 61.1 L 12.2 57.2 L 16.6 57.2 L 16.6 74.9 A 526.455 526.455 0 0 1 8.262 75.903 C 6.023 76.156 3.899 76.385 1.924 76.595 A 9414.307 9414.307 0 0 1 0 76.8 L 1.8 88.3 A 2097.48 2097.48 0 0 0 12.041 86.778 C 18.108 85.862 24.698 84.846 31.288 83.812 A 3589.239 3589.239 0 0 0 35.8 83.1 C 36.2 85.5 36.6 87.7 36.8 89.7 L 45.9 86.7 A 70.317 70.317 0 0 0 45.061 81.657 C 43.738 75.061 41.393 67.121 38.8 60.6 L 30.2 63.4 A 83.254 83.254 0 0 1 31.787 67.863 A 225.071 225.071 0 0 1 33.3 72.7 Z M 12.2 28.8 L 17.6 28.8 L 17.6 47.5 L 12.2 47.5 L 12.2 28.8 Z M 31.5 47.5 L 26.1 47.5 L 26.1 28.8 L 31.5 28.8 L 31.5 47.5 Z" vector-effect="non-scaling-stroke"/></g></svg>',
+        summary: "In Chinese astrology, the Snake is one of the twelve zodiac animals. It is associated with wisdom, intelligence, and gracefulness. People born in the Year of the Snake are believed to possess these characteristics. The Snake is the sixth animal in the Chinese zodiac cycle, following the Dragon and preceding the Horse.",
         personality_1: "Snakes are sensitive, effective, and adaptable, positive personality traits often complemented by a considerable intelligence. They are usually amiable and even-tempered, showing a cool and calm exterior punctuated by occasional bouts of perfectly-timed energy and passion. They move elegantly through the social sphere, armed with their wide range of interests and hobbies, which add to their intrigue and mystery. They’re often artistic, which makes them taste-makers others look to for guidance.",
         strengths: "wisdom",
         strengths_2: "intelligence",
@@ -1138,6 +1190,7 @@ const data: Record<string, Record<string, string>> = {
         birth_more_10: "German composer and musician of the Baroque period.",
     },
     horse: {
+        letter: '<svg width="250" height="250" viewBox="0 0 87.9 88.831" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(75, 12, 12)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(75, 12, 12);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d="M 74.3 0.8 L 65.5 0 L 63.5 0.5 L 7.1 0.5 L 7.1 12 L 61.5 12 C 61.066 16.966 60.515 22.624 59.898 28.283 A 609.66 609.66 0 0 1 58.7 38.5 L 25.4 38.5 A 456.543 456.543 0 0 0 26.258 30.678 C 26.666 26.672 27.042 22.594 27.386 18.766 A 2852.878 2852.878 0 0 0 27.5 17.5 L 15.5 16.7 A 394.724 394.724 0 0 1 15.048 22.836 C 14.365 31.257 13.374 40.457 12.353 47.33 A 166.875 166.875 0 0 1 12 49.6 L 74.9 49.6 C 73.376 64.665 71.69 72.654 69.483 75.73 A 4.783 4.783 0 0 1 68.7 76.6 C 67.682 77.462 66.664 77.771 65.309 77.865 A 17.634 17.634 0 0 1 64.1 77.9 A 140.608 140.608 0 0 1 62.311 77.887 C 60.561 77.865 58.215 77.808 55.606 77.685 A 167.647 167.647 0 0 1 49.6 77.3 A 19.946 19.946 0 0 1 51.544 80.961 C 52.342 82.894 52.91 84.97 53.202 86.863 A 19.417 19.417 0 0 1 53.4 88.7 C 59.6 88.9 65.5 88.9 69 88.5 A 24.681 24.681 0 0 0 72.593 87.93 C 75.003 87.332 76.975 86.263 78.9 84.2 C 82.592 80.318 84.94 70.431 87.132 47.58 A 630.026 630.026 0 0 0 87.5 43.6 A 23.705 23.705 0 0 0 87.553 43.137 C 87.717 41.573 87.869 39.035 87.896 38.573 A 57.724 57.724 0 0 0 87.9 38.5 L 70.6 38.5 A 1143.353 1143.353 0 0 0 72.141 25.032 C 72.796 18.963 73.39 12.894 73.841 7.234 A 366.478 366.478 0 0 0 74.3 0.8 Z M 65.8 58.7 L 0 58.7 L 0 70.1 L 65.8 70.1 L 65.8 58.7 Z" vector-effect="non-scaling-stroke"/></g></svg>',
         summary: "In Chinese astrology, the Horse is one of the twelve animal signs representing a twelve-year cycle. People born in the Year of the Horse are believed to inherit certain personality traits and characteristics associated with this zodiac sign.",
         personality_1: "Horses are leaders who rarely accept defeat, so they can motivate themselves to put up an active fight in everything they do. This can come off as tenacity, endurance, stubbornness, or even foolhardiness in certain situations. Once Horse matures and learns to harness this energy, they’ll be unstoppable since they’re agile and shrewd thinkers who innately understand human nature. They’re also principled, so their efforts will be put toward a good cause.",
         strengths: "energy and vitality",
@@ -1182,8 +1235,7 @@ const data: Record<string, Record<string, string>> = {
         years_28: "2026",
         years_29: "February 17, 2026",
         years_30: "February 5, 2027",
-        overall: "Horses embody strength, independence, and an adventurous spirit, navigating life with resilience and an unwavering pursuit of freedom and excitement.",
-        metal: "Metal Horses are kind-hearted, outspoken, and willing to help others. They dislike advice or criticism from others, so they may be stuck on the wrong idea for too long and end up not accomplishing much. They’re just as stubborn when it comes to love, as once married, their devotion to their partner and family will prove immovable, with Metal Horses themselves maturing into calm rationality as time goes on.",
+        overall: "Horses are recognized for their spirited nature, independence, and relentless pursuit of their ambitions.",
         metal_years: "1930, 1990",
         water: "Water Horses have a self-sacrificial spirit, although they can also be impatient and emotional. They’re thoughtful and suitable for great ambition because they’ll often receive unexpected help from unlikely quarters, especially from the opposite gender. Although they’re not particularly sexy, Water Horses can easily attract attention with their cheery personality. A relationship with them will require patience from their partner, but once married, they’ll quickly grow into their true potential.",
         water_years: "1942, 2002",
@@ -1250,6 +1302,7 @@ const data: Record<string, Record<string, string>> = {
         birth_more_10: "American actress known for her role in 'Pretty Woman'",
     },
     goat: {
+        letter: '<svg width="250" height="250" viewBox="0 0 89.5 93.7" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(75, 12, 12)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(75, 12, 12);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d="M 89.5 60.8 L 50.8 60.8 L 50.8 49.9 L 79.6 49.9 L 79.6 38.5 L 50.8 38.5 L 50.8 28.2 L 85.3 28.2 L 85.3 16.8 L 67.9 16.8 A 244.726 244.726 0 0 0 70.191 12.872 C 71.993 9.711 73.82 6.33 75.5 2.9 L 62.6 0 A 72.588 72.588 0 0 1 61.63 2.979 C 60.061 7.487 57.831 12.737 55.8 16.8 L 28.7 16.8 L 35.2 14.3 C 33.614 10.433 30.16 4.502 26.982 0.113 A 64.258 64.258 0 0 0 26.9 0 L 15.9 3.9 A 103.508 103.508 0 0 1 17.154 5.828 C 19.41 9.381 21.737 13.516 23 16.8 L 4.7 16.8 L 4.7 28.2 L 38.1 28.2 L 38.1 38.5 L 9.3 38.5 L 9.3 49.9 L 38.1 49.9 L 38.1 60.8 L 0 60.8 L 0 72.3 L 38.1 72.3 L 38.1 93.7 L 50.8 93.7 L 50.8 72.3 L 89.5 72.3 L 89.5 60.8 Z" vector-effect="non-scaling-stroke"/></g></svg>',
         summary: "In Chinese astrology, the Goat, also known as the Sheep or Ram, is one of the twelve animal signs representing a twelve-year cycle. People born in the Year of the Goat are believed to inherit certain personality traits and characteristics associated with this zodiac sign.",
         personality_1: "Goats (sometimes also translated as Rams) are the most tender and mild of the zodiac signs, known for their honest, kind, and empathic nature. They’re selflessly giving, willing to lend their last penny to their closest friends without a second thought. They’re born compassionate, so when they meet others who have suffered, Goats may grow despondent themselves. They’re also creative, almost indulgently so, with no shortage of whimsical images and ideas floating around in their mind.",
         strengths: "gentleness",
@@ -1294,7 +1347,7 @@ const data: Record<string, Record<string, string>> = {
         years_28: "2027",
         years_29: "February 6, 2027",
         years_30: "January 25, 2028",
-        overall: "Horses embody strength, independence, and an adventurous spirit, navigating life with resilience and an unwavering pursuit of freedom and excitement.",
+        overall: "Goats are characterized by their gentle nature, artistic talents, and a compassionate demeanor towards others.",
         metal: "Metal Goats are kind-hearted, ambitious, with a strong sense of responsibility and ownership. They’re very principled but also stubborn and lack flexibility; therefore, they’re advised to specialize in a certain discipline until they become experts. Unlike their decisive work persona, in love Metal Goats are wishy-washy, taking one step forward before two steps back during courtship. Even when a relationship has run its course, they’ll have a hard time leaving.",
         metal_years: "1931, 1991",
         water: "Water Goats are gentle and self-sacrificial creatures loved by friends and family. They’re not competitive per se, although they’re motivated to seek knowledge, which means they will make excellent researchers, especially in the tech world. Water Goats are destined for a happy family life since they’ll find a suitable mate quite easily early in life. On the other hand, their fortune in wealth is less dependable, especially with financial investment.",
@@ -1362,18 +1415,19 @@ const data: Record<string, Record<string, string>> = {
         birth_more_10: " British musician, singer, and songwriter.",
     },
     monkey: {
-        summary: "In Chinese astrology, the Goat, also known as the Sheep or Ram, is one of the twelve animal signs representing a twelve-year cycle. People born in the Year of the Goat are believed to inherit certain personality traits and characteristics associated with this zodiac sign.",
+        letter: '<svg width="250" height="250" viewBox="0 0 95 93.7" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(75, 12, 12)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(75, 12, 12);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d="M 30.4 7.1 L 22.4 2 C 21 4.9 19.3 7.8 17.2 10.6 A 72.963 72.963 0 0 0 12.65 4.975 A 66.436 66.436 0 0 0 9.4 1.6 L 1.8 7.2 C 5.5 10.9 8.5 14.7 10.7 18.6 C 7.846 21.705 4.711 24.529 1.708 26.657 A 37.236 37.236 0 0 1 0 27.8 A 16.379 16.379 0 0 1 0.569 28.591 C 2.42 31.32 4.394 35.681 5.3 38.4 C 8.059 36.227 10.887 33.634 13.552 30.739 A 70.443 70.443 0 0 0 15.1 29 C 16.1 32.4 16.8 35.9 17.2 39.6 A 45.995 45.995 0 0 1 15.637 42.633 C 11.838 49.397 6.004 56.161 0.7 59.9 A 20.289 20.289 0 0 1 1.412 60.861 C 3.164 63.367 5.134 67.128 6.1 69.5 A 56.172 56.172 0 0 0 8.47 67.298 C 10.292 65.508 12.114 63.497 13.889 61.319 A 89.599 89.599 0 0 0 17.9 56 A 218.332 218.332 0 0 1 17.615 65.818 C 17.285 71.867 16.644 76.708 15.529 78.913 A 3.961 3.961 0 0 1 15.1 79.6 A 4.299 4.299 0 0 1 14.288 80.494 C 13.901 80.807 13.459 81.026 12.922 81.171 A 5.737 5.737 0 0 1 12.3 81.3 A 27.086 27.086 0 0 1 11.058 81.388 C 9.509 81.464 7.546 81.447 5.095 81.288 A 92.828 92.828 0 0 1 2.7 81.1 A 22.182 22.182 0 0 1 5.204 88.011 C 5.433 89.222 5.567 90.433 5.6 91.6 C 8.482 91.728 11.076 91.733 13.463 91.51 A 28.158 28.158 0 0 0 17.3 90.9 A 10.854 10.854 0 0 0 20.614 89.518 A 8.583 8.583 0 0 0 23 87.2 A 17.602 17.602 0 0 0 25.434 81.97 C 27.473 75.341 28.048 65.391 28.097 55.441 A 294.833 294.833 0 0 0 28.1 54 A 151.409 151.409 0 0 0 27.597 40.837 A 105.581 105.581 0 0 0 27.3 37.9 A 242.19 242.19 0 0 1 27.947 38.81 C 29.121 40.469 30.294 42.18 31.142 43.57 A 31.389 31.389 0 0 1 31.4 44 C 32.8 42.6 34.2 41.1 35.5 39.5 L 35.5 93.2 L 46.5 93.2 L 46.5 22.2 C 49.7 15.9 52.2 9.2 54.2 2.8 L 42.8 0 A 87.095 87.095 0 0 1 40.719 7.112 C 37.925 15.37 33.691 24.062 28.408 30.733 A 48.527 48.527 0 0 1 26.5 33 C 25.7 28.4 24.4 24.1 22.6 19.8 C 25.5 15.6 28.3 11.2 30.4 7.1 Z M 93.6 69.1 L 93.6 59.1 L 77.8 59.1 L 77.8 58.1 L 77.8 49.7 L 91 49.7 L 91 39.8 L 65.1 39.8 A 82.406 82.406 0 0 0 66.731 35.342 A 90.104 90.104 0 0 0 67.2 33.9 L 60.2 32.2 L 93.8 32.2 L 93.8 22.2 L 85.6 22.2 A 261.899 261.899 0 0 0 86.527 13.64 C 86.689 11.871 86.834 10.079 86.958 8.286 A 208.414 208.414 0 0 0 87.2 4.2 L 79.4 3.5 L 77.5 3.9 L 57.1 3.9 L 57.1 13.7 L 75.7 13.7 C 75.5 16.5 75.2 19.4 74.8 22.2 L 50.8 22.2 L 50.8 32.2 L 56.7 32.2 A 67.08 67.08 0 0 1 55.262 36.908 C 53.65 41.576 51.428 46.415 48.788 50.328 A 34.145 34.145 0 0 1 47.2 52.5 C 49.36 53.58 52.492 55.551 54.701 57.319 A 24.535 24.535 0 0 1 55.4 57.9 A 50.807 50.807 0 0 0 58.983 52.759 A 50.061 50.061 0 0 0 60.7 49.7 L 66.8 49.7 L 66.8 57.9 L 66.8 59.1 L 49.5 59.1 L 49.5 69.1 L 65.2 69.1 A 26.162 26.162 0 0 1 63.847 72.242 C 61.34 77.145 56.835 82.047 48.6 86 A 18.087 18.087 0 0 1 49.737 86.862 C 51.954 88.673 54.406 91.371 55.835 93.328 A 20.246 20.246 0 0 1 56.1 93.7 C 61.882 90.473 66.218 86.838 69.381 83.041 A 33.476 33.476 0 0 0 73.2 77.4 C 76.9 84.1 81.9 89.6 88.1 93.1 A 22.519 22.519 0 0 1 88.797 91.937 C 90.431 89.375 93.014 86.255 95 84.7 C 88.3 81.5 82.8 75.9 79.4 69.1 L 93.6 69.1 Z" vector-effect="non-scaling-stroke"/></g></svg>',
+        summary: "In Chinese astrology, the Monkey is the ninth of the twelve animals in the Chinese zodiac cycle. The Monkey is associated with the ninth Earthly Branch symbol, 申 (shēn). People born in the Year of the Monkey are believed to inherit characteristics associated with this animal.",
         personality_1: "It seems Monkey can always come up with the most innovative ideas, making many envious or resentful. Their creativity is synonymous with their unpredictability, so you never know what to expect with this mercurial sign. Monkeys are social—they’ll grow despondent if left alone for too long. As such, they need sounding boards in their friends and colleagues when they’re creating, as opposed to being locked away on their own.",
-        strengths: "gentleness",
-        strengths_2: "creativity",
-        strengths_3: "harmony",
-        strengths_4: "intuition",
-        strengths_5: "resilience",
-        weaknesses: "indecisiveness",
-        weaknesses_2: "over-sensitivity",
-        weaknesses_3: "passivity",
-        weaknesses_4: "over-idealization",
-        weaknesses_5: "dependence on others",
+        strengths: "sociability",
+        strengths_2: "versatility",
+        strengths_3: "playfulness",
+        strengths_4: "optimism",
+        strengths_5: "creativity",
+        weaknesses: "inconsistency",
+        weaknesses_2: "impulsiveness",
+        weaknesses_3: "mischievousness",
+        weaknesses_4: "lack of commitment",
+        weaknesses_5: "superficiality",
         personality_2: "This is a very practical sign, and their calculations often involve numbers, profits and losses, and the accumulation of wealth. With this advantage in intelligence, less evolved Monkeys can often feel rather superior to others.",
         years: "Years of the Monkey",
         years_1: "1920",
@@ -1406,7 +1460,7 @@ const data: Record<string, Record<string, string>> = {
         years_28: "2028",
         years_29: "January 26, 2028",
         years_30: "February 12, 2029",
-        overall: "Horses embody strength, independence, and an adventurous spirit, navigating life with resilience and an unwavering pursuit of freedom and excitement.",
+        overall: "Monkeys are celebrated for their wit, charm, and adaptability, often excelling as quick problem-solvers and versatile thinkers.",
         metal: "Metal Monkeys are clever and tough, cunning and decisive, and eloquent and stubborn. This group is naturally confident, so they make perfect entrepreneurs who won’t have to look far for investors who believe in their vision. They’ll marry later, if they do at all, because their priority will be to build a career and professional reputation first. They won’t lack friends, which will provide the emotional support they need earlier on.",
         metal_years: "1920, 1980",
         water: "Water Monkeys possess a rather infectious vitality, although their energetic presence is accompanied by pushiness and a more hands-on leadership style. They have the tendency to behave with arrogance, which may arouse resentment in their team. In marriage and romance, Water Monkeys will have strong, if not passionate, relationships all their lives. In terms of wealth, however, they’ll need to deal with fluctuating fortunes, so prepare and save for lean years.",
@@ -1440,18 +1494,18 @@ const data: Record<string, Record<string, string>> = {
         worst_more: "This is a terrible pairing characterized by power plays from both sides. They’re certainly an ambitious couple, but both are more concerned with gaining the upper hand than working toward a common goal aspiration. Monkey wants to conquer Tiger and usually succeeds in this pairing, while Tiger, who’s usually confident, may become uncertain of their own abilities and lose themselves—a sad sight to witness in any zodiac sign.",
         worst_2: "Monkey and Pig",
         worst_more_2: "This is a damaging aspect for both zodiac signs, but they seem to strike gold after they marry, which leads them to stay together. They’ll soon discover that they can’t be themselves around their partner. Monkey will become unscrupulous in reaching their goals in this relationship, which will soon make Monkey and Pig a couple that looks enviable and successful on the outside—but miserable and inauthentic on the inside.",
-        lucky_1: "1, 5, 6",
-        lucky_2: "Brown, Black, Gray",
-        lucky_3: "North, Northwest",
-        lucky_4: "Sunflower, Jasmine",
-        lucky_5: "March, April, May, July",
-        lucky_6: "Topaz, Aquamarine",
-        lucky_7: "Horse figurines or ornaments",
-        unlucky_1: "1, 6, 7",
-        unlucky_2: "White, Gold",
-        unlucky_3: "West, Northwest",
-        unlucky_4: "February, April, August, September",
-        unlucky_5: "Garnet",
+        lucky_1: "1, 8, 9",
+        lucky_2: "White, Gold, Blue",
+        lucky_3: "North, Northwest, West",
+        lucky_4: "Chrysanthemum, Crape Myrtle",
+        lucky_5: "August, September, November, December",
+        lucky_6: "Crystal, Agate",
+        lucky_7: "Monkey figurines or ornaments",
+        unlucky_1: "2, 5, 7",
+        unlucky_2: "Red, Black",
+        unlucky_3: "South, Southeast",
+        unlucky_4: "February, March, May, June",
+        unlucky_5: "Coral",
         birth: "Leonardo da Vinci:",
         birth_more: "Italian polymath known for his expertise in painting.",
         birth_2: "Julius Caesar:",
@@ -1474,19 +1528,20 @@ const data: Record<string, Record<string, string>> = {
         birth_more_10: "Jamaican former sprinter.",
     },
     rooster: {
-        summary: "In Chinese astrology, the Goat, also known as the Sheep or Ram, is one of the twelve animal signs representing a twelve-year cycle. People born in the Year of the Goat are believed to inherit certain personality traits and characteristics associated with this zodiac sign.",
-        personality_1: "Goats (sometimes also translated as Rams) are the most tender and mild of the zodiac signs, known for their honest, kind, and empathic nature. They’re selflessly giving, willing to lend their last penny to their closest friends without a second thought. They’re born compassionate, so when they meet others who have suffered, Goats may grow despondent themselves. They’re also creative, almost indulgently so, with no shortage of whimsical images and ideas floating around in their mind.",
-        strengths: "gentleness",
-        strengths_2: "creativity",
-        strengths_3: "harmony",
-        strengths_4: "intuition",
-        strengths_5: "resilience",
-        weaknesses: "indecisiveness",
-        weaknesses_2: "over-sensitivity",
-        weaknesses_3: "passivity",
-        weaknesses_4: "over-idealization",
-        weaknesses_5: "dependence on others",
-        personality_2: "Socially, Goats are soft-spoken, elegant, and personable, meek on the outside yet strong and resilient on the inside. If anyone mistakes their docility as a weakness, however, Goats will be sure to deliver a rude awakening.",
+        letter: '<svg width="250" height="250" viewBox="0 0 92.8 93.075" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(75, 12, 12)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(75, 12, 12);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d="M 92.8 50 L 54.1 50 L 54.1 18.3 L 76.1 18.3 C 75.61 28.186 74.986 33.199 74.174 35.466 A 4.069 4.069 0 0 1 73.6 36.6 C 73.004 37.367 72.335 37.625 71.469 37.685 A 6.824 6.824 0 0 1 71 37.7 A 122.239 122.239 0 0 1 69.982 37.697 C 68.582 37.686 66.544 37.634 64.2 37.4 A 15.196 15.196 0 0 1 65.155 39.39 C 66.044 41.61 66.649 44.289 66.8 46.4 A 75.737 75.737 0 0 0 70.15 46.498 C 72.781 46.516 75.142 46.383 76.7 46.1 A 11.185 11.185 0 0 0 79.693 45.386 C 80.701 44.972 81.604 44.364 82.435 43.469 A 9.719 9.719 0 0 0 83 42.8 C 85.3 40.1 86.3 32.4 87.1 13.5 A 17.072 17.072 0 0 0 87.123 13.139 C 87.193 11.89 87.199 9.921 87.2 9.558 A 38.033 38.033 0 0 0 87.2 9.5 L 67.3 9.5 A 106.333 106.333 0 0 0 70.785 3.669 A 91.554 91.554 0 0 0 72 1.4 L 59.7 0 A 35.133 35.133 0 0 1 58.897 2.689 C 58.475 3.939 57.975 5.253 57.441 6.566 A 121.143 121.143 0 0 1 56.2 9.5 L 42.8 9.5 L 42.8 58.8 L 81.4 58.8 C 80.8 74.8 80 81.2 78.6 82.9 C 77.7 83.9 76.8 84.1 75.3 84.1 A 64.544 64.544 0 0 1 74.19 84.089 C 72.52 84.059 69.934 83.969 67.059 83.78 A 153.579 153.579 0 0 1 65.9 83.7 A 17.313 17.313 0 0 1 66.937 85.753 C 67.922 88.045 68.625 90.786 68.7 92.9 A 213.049 213.049 0 0 0 73.537 93.055 C 75.923 93.099 78.097 93.077 79.779 92.929 A 19.165 19.165 0 0 0 80.9 92.8 A 15.426 15.426 0 0 0 84.224 92.043 C 85.799 91.468 87.142 90.563 88.3 89.1 A 9.868 9.868 0 0 0 89.929 85.684 C 91.145 81.631 91.861 74.505 92.463 62.07 A 861.439 861.439 0 0 0 92.8 54.3 L 92.8 50 Z M 32.7 10.3 L 30.8 10.7 L 2.3 10.7 L 2.3 21.2 L 27.7 21.2 C 26.4 28.3 24.5 35.2 22.2 41.8 C 19.113 37.331 15.959 33.061 12.954 29.042 A 2304.456 2304.456 0 0 0 10.9 26.3 L 2.4 32.5 A 423.084 423.084 0 0 1 7.927 40.289 C 10.59 44.132 13.283 48.142 15.882 52.153 A 429.1 429.1 0 0 1 17.2 54.2 C 12.573 63.552 6.881 71.45 0.313 76.75 A 41.229 41.229 0 0 1 0 77 A 19.699 19.699 0 0 1 1.206 77.941 C 3.763 80.088 6.636 83.389 8.1 85.8 A 70.742 70.742 0 0 0 20.111 72.061 A 90.829 90.829 0 0 0 24.1 65.6 C 26.5 69.6 28.3 73.3 29.8 76.5 L 39.3 69 A 76.068 76.068 0 0 0 36.733 64.037 C 35.563 61.948 34.225 59.738 32.761 57.46 A 173.084 173.084 0 0 0 30 53.3 A 134.169 134.169 0 0 0 36.088 34.313 A 190.169 190.169 0 0 0 40 12.7 L 32.7 10.3 Z M 77.8 66.1 L 40.1 66.1 L 40.1 76.1 L 77.8 76.1 L 77.8 66.1 Z M 65.6 36.1 L 72.4 30.8 A 24.263 24.263 0 0 0 71.256 29.288 C 69.167 26.721 65.945 23.533 63.084 21.078 A 62.446 62.446 0 0 0 62.4 20.5 L 56 25.2 C 59.5 28.5 63.6 33.1 65.6 36.1 Z" vector-effect="non-scaling-stroke"/></g></svg>',
+        summary: "In Chinese astrology, the Rooster is the tenth animal in the twelve-year cycle of the Chinese zodiac. People born in the Year of the Rooster are believed to inherit characteristics associated with this zodiac sign. The Rooster is associated with the tenth Earthly Branch symbol 酉.",
+        personality_1: "Roosters are efficient and capable when the goings are good as well as when they are bad. In times of emergency, many look to them to keep their calm and immediately come up with the most appropriate measures. They’re also smart, ambitious, and competitive, although their ambition is defined by a surprising compassion for others and a sense of justice. Ultimately, Roosters want to fight on the side of the right and protect others.",
+        strengths: "punctuality",
+        strengths_2: "diligence",
+        strengths_3: "confidence",
+        strengths_4: "attention to detail",
+        strengths_5: "courage",
+        weaknesses: "critical nature",
+        weaknesses_2: "perfectionism",
+        weaknesses_3: "rigidness",
+        weaknesses_4: "nervous tension",
+        weaknesses_5: "impatience",
+        personality_2: "Because of their punctuality and ambition, Roosters can rise to leadership positions and gain the recognition and trust of the public. When that happens, their higher social status will endow them with an urgency to do right by the world.",
         years: "Years of the Rooster",
         years_1: "1921",
         years_2: "February 8, 1921",
@@ -1518,52 +1573,52 @@ const data: Record<string, Record<string, string>> = {
         years_28: "2029",
         years_29: "February 13, 2029",
         years_30: "February 2, 2030",
-        overall: "Horses embody strength, independence, and an adventurous spirit, navigating life with resilience and an unwavering pursuit of freedom and excitement.",
-        metal: "Metal Horses are kind-hearted, outspoken, and willing to help others. They dislike advice or criticism from others, so they may be stuck on the wrong idea for too long and end up not accomplishing much. They’re just as stubborn when it comes to love, as once married, their devotion to their partner and family will prove immovable, with Metal Horses themselves maturing into calm rationality as time goes on.",
-        metal_years: "1930, 1990",
-        water: "Water Horses have a self-sacrificial spirit, although they can also be impatient and emotional. They’re thoughtful and suitable for great ambition because they’ll often receive unexpected help from unlikely quarters, especially from the opposite gender. Although they’re not particularly sexy, Water Horses can easily attract attention with their cheery personality. A relationship with them will require patience from their partner, but once married, they’ll quickly grow into their true potential.",
-        water_years: "1942, 2002",
-        wood: "Wood Horses have a rich imagination and inspired insights. They can read others and make themselves likable, while they also tend to be impatient and overly emotional, and will need to cultivate perseverance and patience. In love, Wood Horses are popular and will remain so even after they settle down. Extramarital affairs are a real risk with Wood Horses and will likely prove detrimental to the stability of their life.",
-        wood_years: "1954, 2014",
-        fire: "Fire Horses are lively, passionate, and unrestrained by nature. They’re leaders who can become headstrong, well-intentioned helpers who can become condescending, and ardent lovers who can become overbearing—in summary; they’re too much of everything! But that’s also why Fire Horses will be blessed with wealth since they tend to work very hard, have great love affairs that seem destined for the book pages, and be remembered for their generosity and vitality.",
-        fire_years: "1966, 2026",
-        earth: "Earth Horses are optimistic and kind-hearted souls who are dedicated to their friends. They’ll never feel lonely in life, and in return, they’ll be blessed with many friends who will love them for their giving spirit. Earth Horses will have ample fortune in wealth and money, but they’re advised to save. In love, they’ll appear less attractive, but once their dense exterior is penetrated, their partner will discover a passionate lover.",
-        earth_years: "1918, 1978",
-        compatibility: "Horses are energetic, lively, and generous, so they will be popular with the opposite sex. When it comes to love compatibility, their hot temper and stubborn nature mean they tend to gravitate towards romantic partners who are more easygoing and gentle. They prefer to take the assertive role and enjoy the pursuit and eventual conquest of the object of their affection. Horses need freedom, so if their partner is needy or clingy, Horses may feel stifled.",
-        best: "Horse and Tiger",
-        best_more: "Tigers may represent characteristics that Horses dislike about themselves— they’re temperamental, hot-headed, and often cocky. But in fact, they bring out the best in each other and allow the other to grow out of their worst. It’s as if both Tiger and Horse finally have someone who can keep up with their own breakneck speed, which can be thrilling to Horse, who would have gotten bored with a less charismatic partner.",
-        gender: "Female Horse and Male Tiger",
-        gender_more: "This is a surprisingly good match because Tiger can provide domestic intimacy and calmness for Horse, making it easy for Horse to mature into a good wife and mother in addition to their career ambition. They’re an energetic and hardworking pair, working together to create a beautiful atmosphere at home. Although both can be temperamental, it seems Tiger and Horse understand each other well enough, which will prevent most disagreements.",
-        gender_reverse: "Female Tiger and Male Horse",
-        gender_reverse_more: "Although Horses tend to prefer mellower zodiac signs, with Tiger, they’re willing to make an exception because these two signs have a lot in common —seemingly, birds of the same feather end up flocking together!.  Both Tiger and Horse are energetic and ambitious, so if they find a common goal or cause, they will prove unstoppable. In each other’s company, they’ll revel in the joy of being in true communion.",
-        best_2: "Horse and Dog",
-        best_more_2: "Dog is practically Horse’s dream come true when it comes to romance since this spirited and high-strung zodiac has always dreamed of a mellower partner who can give them a respite from their own passionate nature. In return, Horse will take on the leadership role in the relationship—as they naturally prefer—and give their more homely partner a sense of direction and movement in life, exactly what Dog wants, too.",
-        gender_2: "Female Horse and Male Dog",
-        gender_more_2: "There isn’t anyone more loyal than Dog, which Horse loves in her man. This couple will support each other while intuitively leaving enough personal space for their faithful partner, giving them the space to grow. Neither will be excessively critical since both are genuinely impressed by their partner’s sincerity and ability to communicate. Horse will find Dog to be a mature partner, often giving her a new perspective in life.",
-        gender_reverse_2: "Female Dog and Male Horse",
-        gender_reverse_more_2: "This pair is likely to grow old together because they’re both generous and cheerful and full of vitality and love for life. They’ll start a family and build a home life that’s never short of joy. Horse is intelligent and insightful, while Dog is sincere and forgiving—a quality he’ll need. In return, Horse will value Dog’s loyalty and show her the love she’ll need to flourish in her own right.",
-        best_3: "Horse and Goat",
-        best_more_3: "Who else can better soothe the passionate Horse when they’re riled up than the gentle and mild Goat? A few well-chosen words and a knowing touch from their better half, and Horse will magically settle down. Many misunderstand Goat to be ambition-less, but not Horse. They know their Goat to be as hardworking—or even stubborn—as themselves when it comes to something they care about, which Horse respects and adores.",
-        gender_3: "Female Horse and Male Goat",
-        gender_more_3: "This is a union with an easygoing heart-to-heart connection since Goat is generally sentimental, kind, and family-oriented, while Horse is cheerful and independent. Together, these two are destined for a lifetime of happiness and fulfillment. Goat won’t hesitate to take the reins in making sure they stay intimate and close emotionally, which gives Horse a sense of a happy family while allowing them a wide berth for their independent nature.",
-        gender_reverse_3: "Female Goat and Male Horse",
-        gender_reverse_more_3: "This couple will fall in love and get married before long because neither will find a better match. Although Horse is fiery while Goat is mild, they share the same goals and values in life. Once they marry, this pair will spur each other on to reach their true potential because they can compensate for each other’s weaknesses while greatly appreciating their strengths. A warm and joyous union is assured.",
-        worst: "Horse and Rat",
-        worst_more: "Horse and Rat cannot seem to stay together for long, even if the relationship started as a loving union, because while they are agreeable and well-liked, they’re also both too headstrong to make any concessions. Horse is demanding and asks Rat to give in to their needs, while Rat will react by ignoring Horse. This leads to frequent conflicts that neither will bother to resolve, making theirs a difficult match.",
-        worst_2: "Horse and Ox",
-        worst_more_2: "Horse and Ox find their way to each other and may start a relationship, but soon conflicts and disputes arrive, and neither can remember why they were drawn to the other in the first place. Horse loves freedom, which makes Ox feel insecure, while Ox’s stability and steadiness bore Horse. What started quickly as a passionate love affair is more likely to result in a bitter breakup rather than a happy marriage.",
-        lucky_1: "1, 5, 6",
-        lucky_2: "Brown, Black, Gray",
-        lucky_3: "North, Northwest",
-        lucky_4: "Sunflower, Jasmine",
-        lucky_5: "March, April, May, July",
-        lucky_6: "Topaz, Aquamarine",
-        lucky_7: "Horse figurines or ornaments",
-        unlucky_1: "1, 6, 7",
-        unlucky_2: "White, Gold",
-        unlucky_3: "West, Northwest",
-        unlucky_4: "February, April, August, September",
-        unlucky_5: "Garnet",
+        overall: "Roosters are complex people who seem strong but, deep down, need validation from loved ones.",
+        metal: "Metal Roosters have a strict sense of justice—right cannot be wrong in their eyes, or vice versa. This makes them some of the most virtuous people but also makes them rather judgmental at times. In love, Metal Roosters will have good luck—especially the men. For women, love won’t be difficult to come by, although they may be quarrelsome and have frequent disputes with their partner, which may snowball.",
+        metal_years: "1921, 1981",
+        water: "Water Roosters are proud by nature, although they’ll never show off their achievements and creations freely themselves. They are also sensitive and drawn to beauty in art and in the people they surround themselves with. In love, Water Roosters are gentle and caring, although they may occasionally indulge in toxic relationships for the drama and even try to entangle their romantic partners long beyond the expiration date of a relationship.",
+        water_years: "1933, 1993",
+        wood: "Wood Roosters love their family and like to stay close. They possess a humorous and gentle energy, making them well-liked by friends and colleagues, even if they’re not wildly creative at work and require oversight. They’ll have various sources of income, even if their wealth fluctuates a great deal due to being generous with loved ones. They should invest in gold and real estate if possible, which helps with that.",
+        wood_years: "1945, 2005",
+        fire: "Fire Roosters are fiercely loyal—promises should be iron-clad. They need a goal or an aspiration to orient themselves and even enemies they can strategize against because competition is what they need to feel alive. Due to their workaholic tendency, Fire Roosters may struggle with love, but this is more of a problem for men than for women. They are great money managers as if they’re capable of spinning gold.",
+        fire_years: "1957, 2017",
+        earth: "Earth Roosters are active and, unlike other Earth elementals, somewhat impatient and fiery-tempered. They love going out and meeting new friends, partaking in group activities, and building a trusted network of friends and acquaintances. Love for Earth Roosters won’t be tabloid-worthy but dependable and enviable, especially later in life. They’ll enjoy the favors of higher-ups, who will give them the chance to earn some extra cash throughout their careers.",
+        earth_years: "1969, 2029",
+        compatibility: "Roosters are as active and ambitious in love as they are in their careers. They’ll work hard toward happiness in a relationship, but they must remember that true love should be felt deeply by the heart. Audacious and wild in the beginning stages of a courtship, once they settle down, Roosters are generally very loyal to their other half. They must remember, however, not to be too exacting with their partners or it can interfere with their love compatibility.",
+        best: "Rooster and Ox",
+        best_more: "Rooster and Ox are both workhorses of the zodiacs—once they fix upon a goal, nothing can stop them from diligently striving until it’s realized. How wonderful to find a partner who shares this ethic! There’s little these two cannot achieve together since their temperaments also complement one another—Rooster is a little high-strung, but Ox is benevolent and forgiving, which goes a long way to ensure a smooth relationship.",
+        gender: "Female Rooster and Male Ox",
+        gender_more: "This is a pair of capable and dedicated lovers. Both are very effective in the real world, which draws them together. Instinctively, they know the other person will be a source of support and love. On top of that, Ox is serious and finds Rooster’s outgoing personality magnetic, while Rooster quite appreciates the gravity of her partner’s personality and finds it reassuring, making this union a practical and prosperous success.",
+        gender_reverse: "Female Ox and Male Rooster",
+        gender_reverse_more: "This pair shares the same hardworking attitude toward everything in life, which includes their attitude toward love. Both will look for a steady and dependable partner, and they will find exactly that in the other. In daily life, their life together should go smoothly, with each partner taking care of what they have promised. This marriage won’t have many conflicts since Rooster is a masterful communicator who speaks his mind.",
+        best_2: "Rooster and Snake",
+        best_more_2: "Rooster and Snake will be the epitome of opposites attracting—Rooster being the most forthright of the zodiacs, while Snake is undeniably the most mysterious. Instead of vexing the partners, they mesh together very well. Since Rooster has a dominant persona, they’ll appreciate the soft subtlety Snake brings. Snake, on the other hand, finds reassurance in Rooster’s honorable and frank character, knowing Rooster is the one person they can trust.",
+        gender_2: "Female Rooster and Male Snake",
+        gender_more_2: "Rooster and Snake will complement each other’s personalities. Rooster is practical and courageous, working always to move their relationship forward, while Snake appreciates this attitude and, in turn, contributes sensitivity and refinement to the union. Both Rooster and Snake will be successful on their own, but when they come together, they’ll suddenly gain a broader perspective on life and begin to perceive more noble goals that they strive for together.",
+        gender_reverse_2: "Female Snake and Male Rooster",
+        gender_reverse_more_2: "Snakes are sensitive and anxious, often guarded because they fundamentally lack a sense of security in their romantic relationships, but Rooster is devoted and loyal—a perfect salve for Snake’s delicate and easily bruised heart. They’re complementary as well since Rooster is a showman while Snake is less ostentatious. Rooster will appreciate his partner’s low-key glamor and feel at ease with her because Snake offers him unconditional support and understanding.",
+        best_3: "Rooster and Dragon",
+        best_more_3: "Rooster and Dragon are a match made in heaven, even though both have strong personalities that might have clashed—if they didn’t also share a belief in justice and a moral compass between right and wrong. What that looks like in love is that both will remain humble—if their partner points out an area for improvement, they’ll be open to change. The result is a beautiful and ultimately triumphant relationship.",
+        gender_3: "Female Rooster and Male Dragon",
+        gender_more_3: "Both are competitive and ambitious, but curiously, this doesn’t lead to conflicts in this relationship. Rooster is efficient and effective, while Dragon is courageous and confident, so both will remain independent in their own right. Although Dragon usually requires his mate to play second fiddle, he’ll appreciate that Rooster’s talents are best developed on her own. Rooster admires Dragon, which for this proud woman, is the best foundation for love.",
+        gender_reverse_3: "Female Dragon and Male Rooster",
+        gender_reverse_more_3: "Both Rooster and Dragon are destined for wealth and fortune, so together, they may as well be a money printing machine. However, their wealth won’t just include material possessions but a lifetime of happiness. They seem to understand their mate instinctively and approve of the commitment to moral justice, long-lasting love, and a joyous family in the other. Since they share these same values, nothing can break them apart.",
+        worst: "Rooster and Rabbit",
+        worst_more: "These two have opposite personalities and values because Rabbit finds Rooster selfish and stubborn, while Rooster thinks Rabbit jealous and insecure. They can’t see eye-to-eye since their best qualities will be ignored by their partner. They’ll most likely fight all the time, which could lead to serious health and psychological concerns. The only way to redeem the relationship is for this pair to live apart and only come together occasionally.",
+        worst_2: "Rooster and Dog",
+        worst_more_2: "This pair cannot make day-to-day life work together since they’re on such different wavelengths. In fact, they wouldn’t even make good roommates or friends, let alone good romantic partners who must face many challenges together. Roosters often have larger-than-life personalities, while Dogs are more easygoing. The peace and quiet Dog looks for in life will feel rather dull to Rooster, and Dog will find Rooster’s showmanship very annoying and deceitful.",
+        lucky_1: "5, 7, 8",
+        lucky_2: "Gold, Yellow, Brown",
+        lucky_3: "South, Southeast",
+        lucky_4: "Gladiola, Impatiens",
+        lucky_5: "anuary, March, April, September",
+        lucky_6: "Citrine, Carnelian",
+        lucky_7: "Rooster figurines or ornaments",
+        unlucky_1: "1, 3, 9",
+        unlucky_2: "White, Green, Blue",
+        unlucky_3: "North, Northwest",
+        unlucky_4: "February, May, July, October",
+        unlucky_5: "Amethyst",
         birth: "Jennifer Aniston:",
         birth_more: "American actress, producer, and businesswoman.",
         birth_2: "Justin Timberlake:",
@@ -1586,18 +1641,19 @@ const data: Record<string, Record<string, string>> = {
         birth_more_10: "Chinese-American martial artist, actor, and filmmaker.",
     },
     dog: {
-        summary: "In Chinese astrology, the Goat, also known as the Sheep or Ram, is one of the twelve animal signs representing a twelve-year cycle. People born in the Year of the Goat are believed to inherit certain personality traits and characteristics associated with this zodiac sign.",
+        letter: '<svg width="250" height="250" viewBox="0 0 91.7 93.406" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(75, 12, 12)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(75, 12, 12);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d="M 58.5 2.7 L 47.1 0 A 91.624 91.624 0 0 1 36.313 24.888 A 58.379 58.379 0 0 1 30.6 32.5 C 29.7 28.6 28.5 24.8 26.8 21 C 30.6 16.5 34.2 11.5 37.2 6.5 L 26.5 1 A 78.119 78.119 0 0 1 21.086 9.333 A 77.458 77.458 0 0 1 20.2 10.5 C 17.838 7.631 15.048 4.691 11.711 1.8 A 74.629 74.629 0 0 0 9.8 0.2 L 1.4 6.8 A 64.019 64.019 0 0 1 7.573 12.508 A 45.864 45.864 0 0 1 12.9 19.3 A 77.074 77.074 0 0 1 1.735 29.13 A 51.152 51.152 0 0 1 0 30.3 C 2.5 32.3 6.3 36.1 8.1 38.5 A 84.325 84.325 0 0 0 16.586 31.631 A 84.548 84.548 0 0 0 18.1 30.2 C 19 33.1 19.7 36.2 20.2 39.3 C 15.75 47.254 8.43 55.656 1.638 60.601 A 39.959 39.959 0 0 1 0.5 61.4 C 3.4 63.6 6.7 67.4 8.7 70.3 C 12.031 67.456 15.495 63.82 18.822 59.714 A 107.464 107.464 0 0 0 21.1 56.8 A 171.297 171.297 0 0 1 20.855 64.797 C 20.438 72.25 19.5 77.875 18 79.9 C 17.176 80.907 16.352 81.495 15.145 81.741 A 5.947 5.947 0 0 1 14.8 81.8 C 12.895 81.966 9.962 82.063 6.114 81.807 A 80.248 80.248 0 0 1 3.6 81.6 A 23.035 23.035 0 0 1 6.437 89.311 A 22.727 22.727 0 0 1 6.8 93.3 C 11.9 93.5 16.2 93.5 20.3 92.5 C 22.9 91.9 25.2 90.5 26.8 88.3 C 31.096 82.542 32.384 70.687 32.574 58.001 A 240.694 240.694 0 0 0 32.6 54.4 C 32.6 47.3 32.3 40.4 30.9 33.7 C 33.6 35.6 37.5 38.8 39.4 40.5 L 40.6 39.1 L 40.6 76.4 L 51.3 76.4 L 51.3 69.6 L 71.8 69.6 L 71.8 34.3 L 44.1 34.3 A 83.364 83.364 0 0 0 48.124 27.685 A 107.508 107.508 0 0 0 49.5 25.1 L 79.8 25.1 A 2033.72 2033.72 0 0 1 79.451 37.975 C 78.603 65.647 77.488 77.088 75.3 79.8 A 8.027 8.027 0 0 1 75.072 80.097 C 74.057 81.353 73.075 81.693 71.4 81.6 A 279.768 279.768 0 0 1 69.633 81.596 C 68.121 81.587 66.16 81.557 63.967 81.464 A 117.797 117.797 0 0 1 59.6 81.2 C 61.7 84.6 63.1 89.8 63.3 93.2 C 68.5 93.3 73.7 93.4 77 92.8 A 15.991 15.991 0 0 0 80.435 91.92 C 81.833 91.364 83.044 90.55 84.182 89.297 A 15.49 15.49 0 0 0 85.7 87.3 A 14.965 14.965 0 0 0 87.883 81.903 C 89.958 73.302 90.749 55.491 91.6 19.9 C 91.6 18.592 91.687 14.929 91.699 14.451 A 192.834 192.834 0 0 1 91.7 14.4 L 54.5 14.4 A 166.007 166.007 0 0 0 55.937 10.522 A 160.998 160.998 0 0 0 58.5 2.7 Z M 61.1 44.3 L 61.1 59.5 L 51.3 59.5 L 51.3 44.3 L 61.1 44.3 Z" vector-effect="non-scaling-stroke"/></g></svg>',
+        summary: "In Chinese astrology, the Dog is the eleventh animal in the twelve-year cycle of the Chinese zodiac. People born in the Year of the Dog are believed to inherit characteristics associated with this zodiac sign.",
         personality_1: "Dogs are friendly, fun-loving, and fiercely loyal to their friends and family, maintaining these relationships over a lifetime of sincerity. They are also compassionate, innocent, and romantic souls who possess a strong intuition to boot. They need praise and encouragement when they exhibit their instinct to follow and protect. This makes Dogs more of a dependable team player than a strong leader, both at work and in their love life.",
-        strengths: "gentleness",
-        strengths_2: "creativity",
-        strengths_3: "harmony",
-        strengths_4: "intuition",
-        strengths_5: "resilience",
-        weaknesses: "indecisiveness",
-        weaknesses_2: "over-sensitivity",
-        weaknesses_3: "passivity",
-        weaknesses_4: "over-idealization",
-        weaknesses_5: "dependence on others",
+        strengths: "loyalty",
+        strengths_2: "honesty",
+        strengths_3: "compassion",
+        strengths_4: "reliability",
+        strengths_5: "discipline",
+        weaknesses: "overprotectiveness",
+        weaknesses_2: "worry and anxiety",
+        weaknesses_3: "pessimism",
+        weaknesses_4: "judgmental",
+        weaknesses_5: "difficulty letting go",
         personality_2: "Their logic in life is simple, so you can always count on their actions and feelings to match their words. If they flout rules—unthinkable for their own sake—it’s to protect those they love.",
         years: "Years of the Dog",
         years_1: "1922",
@@ -1631,51 +1687,51 @@ const data: Record<string, Record<string, string>> = {
         years_29: "February 3, 2030",
         years_30: "January 22, 2031",
         overall: "Honest and loyal, Dogs are the truest friends and most reliable partner.",
-        metal: "Metal Horses are kind-hearted, outspoken, and willing to help others. They dislike advice or criticism from others, so they may be stuck on the wrong idea for too long and end up not accomplishing much. They’re just as stubborn when it comes to love, as once married, their devotion to their partner and family will prove immovable, with Metal Horses themselves maturing into calm rationality as time goes on.",
-        metal_years: "1930, 1990",
-        water: "Water Horses have a self-sacrificial spirit, although they can also be impatient and emotional. They’re thoughtful and suitable for great ambition because they’ll often receive unexpected help from unlikely quarters, especially from the opposite gender. Although they’re not particularly sexy, Water Horses can easily attract attention with their cheery personality. A relationship with them will require patience from their partner, but once married, they’ll quickly grow into their true potential.",
-        water_years: "1942, 2002",
-        wood: "Wood Horses have a rich imagination and inspired insights. They can read others and make themselves likable, while they also tend to be impatient and overly emotional, and will need to cultivate perseverance and patience. In love, Wood Horses are popular and will remain so even after they settle down. Extramarital affairs are a real risk with Wood Horses and will likely prove detrimental to the stability of their life.",
-        wood_years: "1954, 2014",
-        fire: "Fire Horses are lively, passionate, and unrestrained by nature. They’re leaders who can become headstrong, well-intentioned helpers who can become condescending, and ardent lovers who can become overbearing—in summary; they’re too much of everything! But that’s also why Fire Horses will be blessed with wealth since they tend to work very hard, have great love affairs that seem destined for the book pages, and be remembered for their generosity and vitality.",
-        fire_years: "1966, 2026",
-        earth: "Earth Horses are optimistic and kind-hearted souls who are dedicated to their friends. They’ll never feel lonely in life, and in return, they’ll be blessed with many friends who will love them for their giving spirit. Earth Horses will have ample fortune in wealth and money, but they’re advised to save. In love, they’ll appear less attractive, but once their dense exterior is penetrated, their partner will discover a passionate lover.",
-        earth_years: "1918, 1978",
-        compatibility: "Horses are energetic, lively, and generous, so they will be popular with the opposite sex. When it comes to love compatibility, their hot temper and stubborn nature mean they tend to gravitate towards romantic partners who are more easygoing and gentle. They prefer to take the assertive role and enjoy the pursuit and eventual conquest of the object of their affection. Horses need freedom, so if their partner is needy or clingy, Horses may feel stifled.",
-        best: "Horse and Tiger",
-        best_more: "Tigers may represent characteristics that Horses dislike about themselves— they’re temperamental, hot-headed, and often cocky. But in fact, they bring out the best in each other and allow the other to grow out of their worst. It’s as if both Tiger and Horse finally have someone who can keep up with their own breakneck speed, which can be thrilling to Horse, who would have gotten bored with a less charismatic partner.",
-        gender: "Female Horse and Male Tiger",
-        gender_more: "This is a surprisingly good match because Tiger can provide domestic intimacy and calmness for Horse, making it easy for Horse to mature into a good wife and mother in addition to their career ambition. They’re an energetic and hardworking pair, working together to create a beautiful atmosphere at home. Although both can be temperamental, it seems Tiger and Horse understand each other well enough, which will prevent most disagreements.",
-        gender_reverse: "Female Tiger and Male Horse",
-        gender_reverse_more: "Although Horses tend to prefer mellower zodiac signs, with Tiger, they’re willing to make an exception because these two signs have a lot in common —seemingly, birds of the same feather end up flocking together!.  Both Tiger and Horse are energetic and ambitious, so if they find a common goal or cause, they will prove unstoppable. In each other’s company, they’ll revel in the joy of being in true communion.",
-        best_2: "Horse and Dog",
+        metal: "Metal Dogs are more conservative. On the outside, they usually look exceptionally handsome or beautiful, which can easily attract the attention of the opposite sex, and they are helpful by nature, which can lead people on unintentionally. Metal Dogs won’t rely on anyone but themselves, so they will succeed through sheer hard work and make themselves indispensable in the workplace. They’re also excellent savers, sometimes choosing a frugal lifestyle with little comfort.",
+        metal_years: "1910, 1970",
+        water: "Water Dogs are blessed with intuition and foresight, but they’re also too self-effacing. They should show off their abilities at work because, otherwise, their superiors will overlook their contributions, which won’t get them anywhere professionally. They may initially be self-centered in love and rejected for not having learned to control their emotions. As they mature, they’ll become more rational and skilled at managing both money and their overly abundant feelings.",
+        water_years: "1922, 1982",
+        wood: "Wood Dogs are honest, loyal, and reliable. If anyone offers them aid, then no matter how much time has elapsed, Wood Dogs will keep this in mind and look for opportunities to repay such kindness. They exhibit the same honesty in love but can become obsessive, so, if they discover their romantic interest doesn’t return their feelings, Wood Dogs may have to nurse their wounds for a long time.",
+        wood_years: "1934, 1994",
+        fire: "Fire Dogs often hold lofty ideals, but for them, these aren’t imaginary but only a yet-to-be-realized reality. And when they inevitably succeed through tireless dedication and effort, genuine praise will mean a lot to these humble souls. Relationships are important to Fire Dogs and can affect them more than others, so they must learn to be more selective in who they surround themselves with, especially in choosing their romantic partner in life.",
+        fire_years: "1946, 2006",
+        earth: "Earth Dogs excel at following through—giving up halfway is not an option for them. This principled self-assuredness often attracts others to Earth Dogs, who can be counted on to always do the right thing. Romance won’t be intuitive for these serious souls, although if the other person takes the initiative, Earth Dogs will follow their lead. In general, Earth Dogs could be bolder to make progress in life.",
+        earth_years: "1958, 2018",
+        compatibility: "Dogs are accepting and loyal in love, often choosing sympathetic partners who will return their genuine affections. Instead of a wild romance, Dogs usually prefer to start as friends and gradually build a time-tested love. They’ll think long and hard about a potential mate before pursuing. Such a reliable approach to compatibility means that Dogs are usually successful in love, as they’ll instinctively know how to cultivate affections in the right way.",
+        best: "Dog and Tiger",
+        best_more: "Dog and Tiger share loyalty in common, although this takes different forms. While Dog is selfless and won’t hesitate to put their partner’s interest before their own, Tiger usually offers protection like a loving monarch. That doesn’t mean they won’t appreciate this rare quality in their partner or know that it stems from a unifying vision of right and wrong, which will inform the home life these two build together.",
+        gender: "Female Dog and Male Tiger",
+        gender_more: "Dog and Tiger make a stellar pair since they get along well in day-to-day life and share similar goals. Both will also be loving and considerate while giving their mate plenty of room and freedom. The only thing is that with their shared ambitions, these two must remember to pay attention to their partner and maintain their love, lest work be all they have to talk about in future years.",
+        gender_reverse: "Female Tiger and Male Dog",
+        gender_reverse_more: "Dog and Tiger are both optimistic and kind souls with a firm belief in promoting justice in the world. Since they share the same virtues and generosity, this pair trusts their partner to act honorably. Dog is diplomatic, which helps his brasher mate, while Tiger’s feisty feminine charm is exactly what Dog loves in their partner. Be sure to create plenty of opportunities for romance even after you marry.",
+        best_2: "Dog and Horse",
         best_more_2: "Dog is practically Horse’s dream come true when it comes to romance since this spirited and high-strung zodiac has always dreamed of a mellower partner who can give them a respite from their own passionate nature. In return, Horse will take on the leadership role in the relationship—as they naturally prefer—and give their more homely partner a sense of direction and movement in life, exactly what Dog wants, too.",
         gender_2: "Female Horse and Male Dog",
         gender_more_2: "There isn’t anyone more loyal than Dog, which Horse loves in her man. This couple will support each other while intuitively leaving enough personal space for their faithful partner, giving them the space to grow. Neither will be excessively critical since both are genuinely impressed by their partner’s sincerity and ability to communicate. Horse will find Dog to be a mature partner, often giving her a new perspective in life.",
         gender_reverse_2: "Female Dog and Male Horse",
         gender_reverse_more_2: "This pair is likely to grow old together because they’re both generous and cheerful and full of vitality and love for life. They’ll start a family and build a home life that’s never short of joy. Horse is intelligent and insightful, while Dog is sincere and forgiving—a quality he’ll need. In return, Horse will value Dog’s loyalty and show her the love she’ll need to flourish in her own right.",
-        best_3: "Horse and Goat",
-        best_more_3: "Who else can better soothe the passionate Horse when they’re riled up than the gentle and mild Goat? A few well-chosen words and a knowing touch from their better half, and Horse will magically settle down. Many misunderstand Goat to be ambition-less, but not Horse. They know their Goat to be as hardworking—or even stubborn—as themselves when it comes to something they care about, which Horse respects and adores.",
-        gender_3: "Female Horse and Male Goat",
-        gender_more_3: "This is a union with an easygoing heart-to-heart connection since Goat is generally sentimental, kind, and family-oriented, while Horse is cheerful and independent. Together, these two are destined for a lifetime of happiness and fulfillment. Goat won’t hesitate to take the reins in making sure they stay intimate and close emotionally, which gives Horse a sense of a happy family while allowing them a wide berth for their independent nature.",
-        gender_reverse_3: "Female Goat and Male Horse",
-        gender_reverse_more_3: "This couple will fall in love and get married before long because neither will find a better match. Although Horse is fiery while Goat is mild, they share the same goals and values in life. Once they marry, this pair will spur each other on to reach their true potential because they can compensate for each other’s weaknesses while greatly appreciating their strengths. A warm and joyous union is assured.",
-        worst: "Horse and Rat",
-        worst_more: "Horse and Rat cannot seem to stay together for long, even if the relationship started as a loving union, because while they are agreeable and well-liked, they’re also both too headstrong to make any concessions. Horse is demanding and asks Rat to give in to their needs, while Rat will react by ignoring Horse. This leads to frequent conflicts that neither will bother to resolve, making theirs a difficult match.",
-        worst_2: "Horse and Ox",
-        worst_more_2: "Horse and Ox find their way to each other and may start a relationship, but soon conflicts and disputes arrive, and neither can remember why they were drawn to the other in the first place. Horse loves freedom, which makes Ox feel insecure, while Ox’s stability and steadiness bore Horse. What started quickly as a passionate love affair is more likely to result in a bitter breakup rather than a happy marriage.",
-        lucky_1: "1, 5, 6",
-        lucky_2: "Brown, Black, Gray",
-        lucky_3: "North, Northwest",
-        lucky_4: "Sunflower, Jasmine",
-        lucky_5: "March, April, May, July",
-        lucky_6: "Topaz, Aquamarine",
-        lucky_7: "Horse figurines or ornaments",
+        best_3: "Dog and Rabbit",
+        best_more_3: "Dog has always been simple and dependable, and that’s why when they encounter Rabbit, who’s whimsical and just a bit capricious, they’re often intoxicated by Rabbit’s charm and the magical presence Rabbit brings to their world. What Dog doesn’t detect—at least not explicitly—is that Rabbit is often insecure, and it’s precisely Dog’s steadfast loyalty and the unlikelihood of their changing that reassures Rabbit and allows them to truly blossom.",
+        gender_3: "Female Dog and Male Rabbit",
+        gender_more_3: "This is a relationship based on honesty and mutual attraction, with one partner’s strengths making up for the other’s shortcomings. In this way, Dog and Rabbit will grow, mature, and make progress in life together. Dogs can feel somewhat insecure at times, but Rabbit will make sure Dog understands that their relationship is meant for life. In this way, they’ll provide the intimacy, closeness, and warmth both have always desired.",
+        gender_reverse_3: "Female Rabbit and Male Dog",
+        gender_reverse_more_3: "Dog is responsible and loyal, while Rabbit is gentle and charming. She will love Dog with her whole heart and know he’s the best mate for her, and her abundant affection will make Dog swoon. This is an ideal match because Dog and Rabbit understand each other and find their partner impossibly attractive. They’ll remain lovers all their lives, even well into their marriage and after their children grow up.",
+        worst: "Dog and Dragon",
+        worst_more: "Dog and Dragon aren’t likely to be happy together because there will be misunderstandings and discord between them. Dog may unknowingly damage Dragon’s legendary pride, while Dragon will find Dog’s loyalty and dedication impossibly dull. Each will become increasingly cold to their partner until both parties decide to satisfy their emotional needs elsewhere. Perhaps it’s for the best that these two zodiac signs won’t likely be drawn to each other.",
+        worst_2: "Dog and Rooster",
+        worst_more_2: "This pair cannot make day-to-day life work together since they’re on such different wavelengths. In fact, they wouldn’t even make good roommates or friends, let alone good romantic partners who must face many challenges together. Roosters often have larger-than-life personalities, while Dogs are more easygoing. The peace and quiet Dog looks for in life will feel rather dull to Rooster, and Dog will find Rooster’s showmanship very annoying and deceitful.",
+        lucky_1: "3, 4, 9",
+        lucky_2: "Green, Red, Purple",
+        lucky_3: "East, South, Southeast",
+        lucky_4: "Rose, Orchid",
+        lucky_5: "March, June, October, November",
+        lucky_6: "Sapphire, Garnet",
+        lucky_7: "Dog figurines or ornaments",
         unlucky_1: "1, 6, 7",
-        unlucky_2: "White, Gold",
-        unlucky_3: "West, Northwest",
+        unlucky_2: "Blue, White, Gold",
+        unlucky_3: "North, Northwest",
         unlucky_4: "February, April, August, September",
-        unlucky_5: "Garnet",
+        unlucky_5: "Opal",
         birth: "Madonna:",
         birth_more: "American singer, songwriter, actress, and businesswoman.",
         birth_2: "Justin Bieber:",
@@ -1698,18 +1754,19 @@ const data: Record<string, Record<string, string>> = {
         birth_more_10: "English mathematician, physicist, and astronomer.",
     },
     pig: {
-        summary: "In Chinese astrology, the Goat, also known as the Sheep or Ram, is one of the twelve animal signs representing a twelve-year cycle. People born in the Year of the Goat are believed to inherit certain personality traits and characteristics associated with this zodiac sign.",
+        letter: '<svg width="250" height="250" viewBox="0 0 93.6 93.4" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgb(75, 12, 12)" stroke-width="0.25mm" fill="rgb(75, 12, 12)" style="stroke:rgb(75, 12, 12);stroke-width:0.25mm;fill:rgb(75, 12, 12)"><path d="M 76.6 14.3 L 76.6 10 L 64.1 10 L 64.1 0.1 L 52.6 0.1 L 52.6 10 L 37.9 10 L 37.9 20.3 L 52.6 20.3 L 52.6 28.8 L 33 28.8 L 33 39.2 L 54.2 39.2 C 47.2 45 39.4 50.1 31.2 54 L 31.2 53.8 A 90.621 90.621 0 0 0 27.356 24.194 A 56.499 56.499 0 0 0 25.3 19 C 27.827 15.861 30.177 12.663 32.173 9.586 A 77.318 77.318 0 0 0 33.9 6.8 L 25 1.2 A 50.612 50.612 0 0 1 21.835 5.976 A 84.591 84.591 0 0 1 19.4 9.1 A 54.565 54.565 0 0 0 14.689 3.38 A 74.122 74.122 0 0 0 11.3 0 L 3 6.2 A 71.789 71.789 0 0 1 8.459 12.287 A 57.972 57.972 0 0 1 12.1 17.4 C 8.1 21.3 3.9 24.8 0 27.3 C 2.341 29.934 5.063 34.566 6.588 37.669 A 43.094 43.094 0 0 1 6.7 37.9 A 141.786 141.786 0 0 0 10.902 34.341 C 12.936 32.54 15.002 30.574 17 28.4 C 18 31.9 18.7 35.4 19.2 39.1 C 14.983 47.054 8.011 54.916 1.453 59.342 A 34.241 34.241 0 0 1 0.6 59.9 C 2.769 62.351 5.471 66.492 6.946 69.388 A 26.797 26.797 0 0 1 7.2 69.9 A 50.104 50.104 0 0 0 9.626 67.847 C 13.136 64.689 16.65 60.744 19.9 56.6 C 19.808 66.759 19.118 75.553 17.438 78.887 A 4.476 4.476 0 0 1 17 79.6 A 3.829 3.829 0 0 1 15.82 80.724 C 15.441 80.95 15.014 81.112 14.525 81.221 A 6.486 6.486 0 0 1 14.1 81.3 A 24.398 24.398 0 0 1 12.979 81.384 C 11.385 81.469 9.248 81.461 6.624 81.331 A 118.262 118.262 0 0 1 4.4 81.2 A 24.53 24.53 0 0 1 7.117 89.464 A 26.775 26.775 0 0 1 7.4 92.7 C 10.534 92.836 13.437 92.833 16.107 92.533 A 27.476 27.476 0 0 0 19.7 91.9 C 22.2 91.4 24.3 90 25.7 87.9 C 29.537 82.602 30.786 71.713 31.126 60.035 A 245.4 245.4 0 0 0 31.2 56.7 A 92.493 92.493 0 0 1 32.34 58.086 C 33.763 59.848 35.228 61.778 36.268 63.241 A 43.962 43.962 0 0 1 37 64.3 A 98.827 98.827 0 0 0 42.222 61.367 A 229.444 229.444 0 0 0 44.8 59.8 L 44.8 93.4 L 55.9 93.4 L 55.9 89.6 L 76.7 89.6 L 76.7 93.4 L 88.4 93.4 L 88.4 46.6 L 62.7 46.6 C 65.4 44.2 68 41.8 70.5 39.2 L 93.5 39.2 L 93.5 28.8 L 79.6 28.8 C 84.9 22.1 89.7 14.8 93.6 7 L 82.8 3.3 C 81 7 78.9 10.7 76.6 14.3 Z M 55.9 80 L 55.9 72.6 L 76.7 72.6 L 76.7 80 L 55.9 80 Z M 76.7 63.3 L 55.9 63.3 L 55.9 56.2 L 76.7 56.2 L 76.7 63.3 Z M 64.1 20.3 L 72.3 20.3 C 70.2 23.3 67.8 26.1 65.2 28.8 L 64.1 28.8 L 64.1 20.3 Z" vector-effect="non-scaling-stroke"/></g></svg>',
+        summary: "In Chinese astrology, the Pig is the twelfth and final animal in the twelve-year cycle of the Chinese zodiac. People born in the Year of the Pig are believed to inherit characteristics associated with this zodiac sign. The Pig is associated with the twelfth Earthly Branch symbol 亥.",
         personality_1: "According to Chinese horoscopes, Pigs are calm and cheerful, with the ability to speak and act with tact. They possess an unusual innocence and optimism, making them appear angelic and almost childlike, leading others to show their true selves. Their joy in life won’t be sacrificed in favor of their ambition, however. Instead, they’ll aim to achieve a balanced, emotionally rich lifestyle, which is only possible for someone with their wisdom and natural talent.",
-        strengths: "gentleness",
-        strengths_2: "creativity",
-        strengths_3: "harmony",
-        strengths_4: "intuition",
-        strengths_5: "resilience",
-        weaknesses: "indecisiveness",
-        weaknesses_2: "over-sensitivity",
-        weaknesses_3: "passivity",
-        weaknesses_4: "over-idealization",
-        weaknesses_5: "dependence on others",
+        strengths: "kindness",
+        strengths_2: "generosity",
+        strengths_3: "honesty",
+        strengths_4: "hospitality",
+        strengths_5: "optimism",
+        weaknesses: "naivety",
+        weaknesses_2: "gullibility",
+        weaknesses_3: "indulgence",
+        weaknesses_4: "dependency",
+        weaknesses_5: "difficulty saying no",
         personality_2: "Socially, Pigs are renowned for their generosity, even though they’re excellent with their money and a common symbol of wealth. If they’re cheated owing to their trusting and kind-hearted nature, Pigs may grow jaded and begin to suspect everything in life.",
         years: "Years of the Pig",
         years_1: "1923",
@@ -1776,18 +1833,18 @@ const data: Record<string, Record<string, string>> = {
         worst_more: "This will be a chaotic pair if they get married. Both Pig and Snake seem to find some aspect of their partner’s personality too different from their own, and as such, will always disagree, quarrel, fight, and divorce. Such a discordant relationship will lead to poor fortune for both since the one place both need to feel comfortable and recharge, the home, is the one place neither can do so in this marriage.",
         worst_2: "Pig and Monkey",
         worst_more_2: "This is a damaging aspect for both zodiac signs, but they seem to strike gold after they marry, which leads them to stay together. They’ll soon discover that they can’t be themselves around their partner. Monkey will become unscrupulous in reaching their goals in this relationship, which will soon make Monkey and Pig a couple that looks enviable and successful on the outside—but miserable and inauthentic on the inside.",
-        lucky_1: "1, 5, 6",
-        lucky_2: "Brown, Black, Gray",
-        lucky_3: "North, Northwest",
-        lucky_4: "Sunflower, Jasmine",
-        lucky_5: "March, April, May, July",
-        lucky_6: "Topaz, Aquamarine",
-        lucky_7: "Horse figurines or ornaments",
-        unlucky_1: "1, 6, 7",
-        unlucky_2: "White, Gold",
-        unlucky_3: "West, Northwest",
-        unlucky_4: "February, April, August, September",
-        unlucky_5: "Garnet",
+        lucky_1: "2, 5, 8",
+        lucky_2: "Yellow, Gray, Brown",
+        lucky_3: "East, South, Southwest",
+        lucky_4: "Hydrangea, Marguerite",
+        lucky_5: " February, March, August, November",
+        lucky_6: "Citrine, Topaz",
+        lucky_7: "Pig figurines or ornaments",
+        unlucky_1: "1, 3, 9",
+        unlucky_2: "Blue, Green, White",
+        unlucky_3: "North, Northwest",
+        unlucky_4: "January, April, May, September",
+        unlucky_5: "Amethyst",
         birth: "Hillary Clinton:",
         birth_more: "American First Lady, Senator and Secretary of State.",
         birth_2: "Arnold Schwarzenegger:",
@@ -2130,6 +2187,13 @@ text-align: center;
 .compatibility {
 padding: 30px;
 }
+.comp span{
+padding: 20px;
+}
+.comp span::selection{
+    color: rgb(194, 181, 178);
+    background: rgb(75, 12, 12);    
+}
 .comp h1{
     display: flex;
     justify-content: center;
@@ -2138,6 +2202,7 @@ padding: 30px;
     color: rgb(161, 41, 41); 
     letter-spacing: 1px;
     justify-content: center;
+    align-items: center;
 }
 .comp h1::selection{
     color: rgb(194, 181, 178);
@@ -2260,6 +2325,7 @@ text-align: center;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         padding: 20px;
         z-index: 1;
+        transition-duration: 300ms;
         
 }
 #toggle:checked + label + .g-content {
@@ -2388,6 +2454,10 @@ justify-content: space-evenly;
     letter-spacing: 1px;
     justify-content: center;
 }
+.famous h2::selection{
+        color: rgb(194, 181, 178);
+        background: rgb(75, 12, 12);    
+} 
 .fam {
     display: flex;
     flex-direction: row;
@@ -2410,6 +2480,7 @@ justify-content: space-evenly;
     padding-right: 20px;
     overflow: hidden;
     white-space: nowrap;
+    align-items: center;
 }
 .f p {
     color:rgb(26, 15, 33);
@@ -2417,6 +2488,14 @@ justify-content: space-evenly;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px; 
 }
+.f h3::selection{
+        color: rgb(194, 181, 178);
+        background: rgb(75, 12, 12);    
+}
+.f p::selection{
+        color: rgb(194, 181, 178);
+        background: rgb(75, 12, 12);    
+} 
 .f h3 {
     color:rgb(238, 228, 169);
     font-size: larger;
